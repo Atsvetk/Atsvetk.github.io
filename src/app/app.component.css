@@ -1,0 +1,45 @@
+
+.fieldset {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center {
+  margin: auto;
+  justify-content: center;
+}
+
+.main {
+  width: 40%
+}
+
+input[type="text"] {
+  width: 50px;
+  height: 30px;
+  text-align: end;
+}
+
+select {
+  width: 75px;
+  height: 30px;
+  text-align: end;
+}
+
+h4 {
+  color: midnightblue;
+  font-size: medium;
+  display: table-cell;
+  vertical-align: middle;
+  width: 80%;
+  float: left
+}
+.ticks {
+  display: flex;
+  justify-content: space-between;
+}
+.tick {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
