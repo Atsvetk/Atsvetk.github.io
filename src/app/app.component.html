@@ -21,6 +21,7 @@
   <div class="text-center">
     <button class="btn btn-primary" [disabled]="isInputFormInvalid()" (click)="onSubmitForm()">Submit</button>
   </div>
+  <br />
   <div *ngIf="isInputFormSubmitted">
     <label for="wetFoodRange" class="form-label">Select the desired amount of wet food:</label>
     <input type="range" class="form-range" min="0" max="{{wetFoodAmount}}" step="0.5" value="0" id="wetFoodRange" (input)="onRangeUpdate($event)">
