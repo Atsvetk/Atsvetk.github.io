@@ -1,0 +1,94 @@
+
+<div class="section-header">
+  Food
+</div>
+<div class="section-form">
+  <div class="section-fields-container">
+    <div class="section-field" *ngIf="showPetSelectionField">
+      <label>
+        Pet
+      </label>
+      <select class="pet-type" (change)="onPetUpdate($event)">
+        <option></option>
+        <option *ngFor="let option of petOptions" [value]="option">
+          {{ option }}
+        </option>
+      </select>
+    </div>
+    <div class="section-field">
+      <label for="caloriesPerDay">
+        Calories per day
+      </label>
+      <input class="calories-per-day" type="number" min="0" id="caloriesPerDay" value="{{caloriesNumCalculated}}" (input)="onCaloriesInputUpdate($event)">
+    </div>
+<!--    <div class="section-field">-->
+<!--      <label for="food-type">-->
+<!--        Type-->
+<!--      </label>-->
+<!--      <div class="food-type-values-group" id="food-type">-->
+<!--        <div class="food-type-input">-->
+<!--          <input id="dry-food" type="radio" name="food-type" value="dry">-->
+<!--          <label for="dry-food">Dry</label>-->
+<!--        </div>-->
+<!--        <div class="food-type-input">-->
+<!--          <input id="wet-food" type="radio" name="food-type" value="wet">-->
+<!--          <label for="wet-food">Wet</label>-->
+<!--        </div>-->
+<!--        <div class="food-type-input">-->
+<!--          <input id="hybrid-food" type="radio" name="food-type" value="hybrid">-->
+<!--          <label for="hybrid-food">Hybrid</label>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+    <div class="section-field">
+      <label for="brand">
+        Brand
+      </label>
+      <select class="brand" id="brand" (change)="onBrandUpdate($event)">
+        <option></option>
+        <option *ngFor="let option of brandOptions" [value]="option">
+          {{ option }}
+        </option>
+      </select>
+    </div>
+    <div class="section-field">
+      <label for="dietDry">
+        Diet for dry food
+      </label>
+      <select class="diet" id="dietDry" (change)="onDietDryUpdate($event)">
+        <option *ngFor="let option of dietDryOptions" [value]="option">
+          {{ option }}
+        </option>
+      </select>
+    </div>
+    <a *ngIf="shouldDisplayDietDryLink" class="diet-link" href="{{dietDryInfo.link}}" target="_blank">More info on {{dietDryInfo.diet}}</a>
+    <div class="section-field">
+      <label for="dietWet">
+        Diet for wet food
+      </label>
+      <select class="diet" id="dietWet" (change)="onDietWetUpdate($event)">
+        <option *ngFor="let option of dietWetOptions" [value]="option">
+          {{ option }}
+        </option>
+      </select>
+    </div>
+    <a *ngIf="shouldDisplayDietWetLink" class="diet-link" href="{{dietWetInfo.link}}" target="_blank">More info on {{dietWetInfo.diet}}</a>
+    <div *ngIf="shouldDisplaySlider()">
+      <label for="wetFoodRange" class="form-label">Select the desired amount of wet food:</label>
+      <input type="range" class="form-range" min="0" max="100" step="10" value="0" id="wetFoodRange">
+      <div class="ticks">
+<!--        <span class="'tick">0</span>-->
+        <span class="tick" *ngFor = "let val of percentages">{{val}}</span>
+      </div>
+    </div>
+  </div>
+
+  <button [disabled]="isFoodFormInvalid()" (click)="onFoodFormSubmit()">
+    Calculate food
+  </button>
+</div>
+
+<div class="section-results">
+
+  <!--add the result-->
+</div>

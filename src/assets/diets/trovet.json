@@ -1,0 +1,31 @@
+{
+  "cat": [
+    {
+      "diet": "Renal & Oxalate",
+      "type": "dry",
+      "calories": 4118,
+      "link": "https://www.trovet.com/product/renal-oxalate-cat/"
+    },
+    {
+      "diet": "Renal & Oxalate Can Chicken",
+      "type": "wet",
+      "calories": 1052,
+      "gramsPerPack": [100, 200],
+      "link": "https://www.trovet.com/product/renal-oxalate-cat/"
+    },
+    {
+      "diet": "Renal & Oxalate Can Lamb",
+      "type": "wet",
+      "calories": 1036,
+      "gramsPerPack": [100, 200],
+      "link": "https://www.trovet.com/product/renal-oxalate-cat/"
+    },
+    {
+      "diet": "Renal & Oxalate Pouch Chicken",
+      "type": "wet",
+      "calories": 1011,
+      "gramsPerPack": [85],
+      "link": "https://www.trovet.com/product/renal-oxalate-cat/"
+    }
+  ]
+}

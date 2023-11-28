@@ -1,38 +1,19 @@
-
-<div class="center main">
-  <h1>{{title}}</h1>
-  <br />
-  <br />
-    <div class="fieldset">
-      <h4 class="col-md">Enter dry food amount per day (in grams):</h4>
-      <input type="text" maxlength="3" (input)="onInputUpdate($event)" >
-    </div>
-      <br />
-    <div class="fieldset">
-      <h4 class="col-md">Select number of cans/pouches per day:</h4>
-      <select class="form-select form-select-sm" (change)="onSelectUpdate($event)">
-        <option value="default">---</option>
-        <option *ngFor="let option of selectOptions" [value]="option">
-          {{option}}
-        </option>
-      </select>
-    </div>
-  <br />
-  <div class="text-center">
-    <button class="btn btn-primary" [disabled]="isInputFormInvalid()" (click)="onSubmitForm()">Submit</button>
+<main>
+  <app-header></app-header>
+  <div class="main-sections-container">
+    <app-section-calories
+      (petSelected)="onPetSelected($event)"
+      (caloriesCalculated)="onCaloriesCalculated($event)"
+      (caloriesSkipped)="onCaloriesSkipped($event)"
+      [class.section-disabled]="caloriesCalculationSkipped"
+    ></app-section-calories>
+    <app-section-food
+      class="food-amount-calculation-main-container"
+      [class.section-disabled]="!(caloriesNumCalculated || caloriesCalculationSkipped)"
+      [caloriesNumCalculated]="caloriesNumCalculated"
+      [showPetSelectionField]="caloriesCalculationSkipped"
+      [pet]="pet"
+    ></app-section-food>
   </div>
-  <br />
-  <div *ngIf="isInputFormSubmitted">
-    <label for="wetFoodRange" class="form-label">Select the desired amount of wet food:</label>
-    <input type="range" class="form-range" min="0" max="{{wetFoodAmount}}" step="0.5" value="0" id="wetFoodRange" (input)="onRangeUpdate($event)">
-    <div class="ticks">
-      <span class="'tick">0</span>
-      <span class="tick" *ngFor = "let val of rangeOptions">{{val}} </span>
-    </div>
-    <br />
-    <h4>Amount of dry food:
-      <span style="font-weight: bolder; text-decoration: underline">{{getDesiredDryFoodAmount()}} g</span>
-    </h4>
-  </div>
-  <br />
-</div>
+  <app-footer></app-footer>
+</main>

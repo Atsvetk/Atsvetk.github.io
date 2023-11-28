@@ -1,0 +1,14 @@
+.ticks {
+  display: flex;
+  justify-content: space-between;
+  /*gap: 6%;*/
+}
+.tick {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.form-range {
+  width: 100%;
+
+}

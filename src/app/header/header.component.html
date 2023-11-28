@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<nav>
+  <button class="btn credits" (click)="onCreditsClick()">
+    Credits
+    <span class="credits-popup" *ngIf="creditsShown" >
+        <strong>Created by:</strong>
+        <br>
+        <br>
+        ▷ <u>Darija Lauš</u>: <em>Inspiration, scientific stuff</em>
+        <br>
+        <br>
+        ▷ <u>Aleksandra Tsvetkova</u>: <em>Development</em>
+      </span>
+  </button>
+</nav>

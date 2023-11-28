@@ -1,0 +1,11 @@
+.section-field select.pet-type,
+.section-field select.current-bcs,
+.section-field select.target-bcs {
+  text-align: right;
+  width: 80px;
+}
+
+.calories-results {
+  flex-direction: column;
+  gap: 10px;
+}
