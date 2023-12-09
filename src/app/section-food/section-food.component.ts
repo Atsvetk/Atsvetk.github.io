@@ -52,13 +52,14 @@ export class SectionFoodComponent implements OnInit {
   dietWet: string = '--None--';
   dietDryOptions: string[] = ['--None--'];
   dietWetOptions: string[] = ['--None--'];
-  dietDryInfo: DietInfo = {
+  brandDietsInfo: DietInfo[] = [];
+  dietDryInfo: DietInfo | undefined = {
     diet: '',
     type: '',
     calories: 0,
     link: ''
   };
-  dietWetInfo: DietInfo = {
+  dietWetInfo: DietInfo | undefined = {
     diet: '',
     type: '',
     calories: 0,
@@ -72,6 +73,8 @@ export class SectionFoodComponent implements OnInit {
 
   dryFoodAmount: number = 0;
   wetFoodAmount: number = 0;
+  dryFoodMaxAmount: number = 0;
+  wetFoodMaxAmount: number = 0;
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -79,7 +82,7 @@ export class SectionFoodComponent implements OnInit {
 
   onPetUpdate(event: any) {
     console.log(event);
-    this.pet = (<HTMLSelectElement>event.target).value.toLowerCase();
+    // this.pet = (<HTMLSelectElement>event.target).value.toLowerCase();
     this.resetDietOptions();
     console.log(`PEt Type from section-food: ${this.pet}`);
   }
@@ -92,27 +95,32 @@ export class SectionFoodComponent implements OnInit {
 
   onBrandUpdate(event: any) {
     console.log(event);
-    this.brand = (<HTMLSelectElement>event.target).value;
+    // this.brand = (<HTMLSelectElement>event.target).value;
     console.log(this.brand);
     if (this.brand !== '') {
+      const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
+      this.http.get(dietPath).subscribe( (response: any) => {
+        console.log(response);
+        this.brandDietsInfo = response[this.pet.toLowerCase()];
       this.getDietDryOptions();
       this.shouldDisplayDietDryLink = false;
       this.getDietWetOptions();
       this.shouldDisplayDietWetLink = false;
+      })
     } else this.resetDietOptions();
   }
 
   getDietDryOptions() {
-    const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
+    // const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
     // if (this.brand !== '') {
-      this.http.get(dietPath).subscribe( (response: any) => {
-        console.log(response);
-        this.dietDryOptions = response[this.pet.toLowerCase()]
+    //   this.http.get(dietPath).subscribe( (response: any) => {
+    //     console.log(response);
+        this.dietDryOptions = this.brandDietsInfo
           .filter((dietItem: DietInfo) => dietItem.type === 'dry')
           .map((dietItem: DietInfo) => dietItem.diet)
           .sort();
         this.dietDryOptions = ['--None--', ...this.dietDryOptions]
-      })
+      // })
     // } else {
     //   this.dietDryOptions = ['--None--'];
     //   this.shouldDisplayDietDryLink = false;
@@ -120,16 +128,16 @@ export class SectionFoodComponent implements OnInit {
   }
 
   getDietWetOptions() {
-    const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
+    // const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
     // if (this.brand !== '') {
-      this.http.get(dietPath).subscribe( (response: any) => {
-        console.log(response);
-        this.dietWetOptions = response[this.pet.toLowerCase()]
+    //   this.http.get(dietPath).subscribe( (response: any) => {
+    //     console.log(response);
+        this.dietWetOptions = this.brandDietsInfo
           .filter((dietItem: DietInfo) => dietItem.type === 'wet')
           .map((dietItem: DietInfo) => dietItem.diet)
           .sort();
         this.dietWetOptions = ['--None--', ... this.dietWetOptions]
-      })
+      // })
     // } else {
     //   this.dietWetOptions = ['--None--'];
     //   this.shouldDisplayDietWetLink = false;
@@ -149,29 +157,33 @@ export class SectionFoodComponent implements OnInit {
   }
 
   getDietDryInfo() {
-    const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
-    this.http.get(dietPath).subscribe( (response: any) => {
-      console.log(response);
-      this.dietDryInfo = response[this.pet.toLowerCase()]
+    // const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
+    // this.http.get(dietPath).subscribe( (response: any) => {
+    //   console.log(response);
+      this.dietDryInfo = this.brandDietsInfo
         .find((diet: DietInfo) => diet.diet === this.dietDry)
-    })
+    // })
   }
 
   getDietWetInfo() {
-    const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
-    this.http.get(dietPath).subscribe( (response: any) => {
-      console.log(response);
-      this.dietWetInfo = response[this.pet.toLowerCase()]
+    // const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
+    // this.http.get(dietPath).subscribe( (response: any) => {
+      // console.log(response);
+      this.dietWetInfo = this.brandDietsInfo
         .find((diet: DietInfo) => diet.diet === this.dietWet)
-    })
+      console.log('WET DIET INFO:', JSON.stringify(this.dietWetInfo))
+    // })
   }
 
   onDietDryUpdate(event: any) {
     console.log(event);
-    this.dietDry = (<HTMLSelectElement>event.target).value;
+    // this.dietDry = (<HTMLSelectElement>event.target).value;
     if(this.dietDry != '--None--') {
       this.getDietDryInfo();
-      this.shouldDisplayDietDryLink = true;
+      if(this.dietDryInfo){
+        this.shouldDisplayDietDryLink = true;
+        this.dryFoodMaxAmount = this.getDryFoodMaxAmount();
+      }
     } else {
       this.shouldDisplayDietDryLink = false;
     }
@@ -180,10 +192,14 @@ export class SectionFoodComponent implements OnInit {
 
   onDietWetUpdate(event: any) {
     console.log(event);
-    this.dietWet = (<HTMLSelectElement>event.target).value;
+    // this.dietWet = (<HTMLSelectElement>event.target).value;
     if(this.dietWet != '--None--') {
       this.getDietWetInfo();
-      this.shouldDisplayDietWetLink = true;
+      if(this.dietWetInfo) {
+        this.shouldDisplayDietWetLink = true;
+        this.wetFoodMaxAmount = this.getWetFoodMaxAmount();
+
+      }
     } else {
       this.shouldDisplayDietWetLink = false;
     }
@@ -201,6 +217,31 @@ export class SectionFoodComponent implements OnInit {
   shouldDisplaySlider() {
     return (this.dietDry !== '--None--') && (this.dietWet !== '--None--')
   }
+
+  getDryFoodMaxAmount() {
+    if(this.dietDryInfo) {
+      console.log('CALORIES NEEDED:', this.caloriesInputted || this.caloriesNumCalculated);
+      console.log('CALORIES FROM DIET INFO:', this.dietDryInfo.calories);
+      console.log('DRY FOOD MAX AMOUNT:', Math.round( (this.caloriesInputted || this.caloriesNumCalculated) * 1000 / this.dietDryInfo.calories));
+      return Math.round( (this.caloriesInputted || this.caloriesNumCalculated) * 1000 / this.dietDryInfo.calories);
+    } else {
+      return 0
+    }
+
+  }
+
+
+  getWetFoodMaxAmount() {
+    if(this.dietWetInfo) {
+      console.log('CALORIES NEEDED:', this.caloriesInputted || this.caloriesNumCalculated);
+      console.log('CALORIES FROM DIET INFO:', this.dietWetInfo.calories);
+      console.log('WET FOOD MAX AMOUNT:', Math.round( (this.caloriesInputted || this.caloriesNumCalculated) * 1000 / this.dietWetInfo.calories));
+      return Math.round( (this.caloriesInputted || this.caloriesNumCalculated) * 1000 / this.dietWetInfo.calories);
+    } else return 0
+
+  }
+
+  // getDesiredDryFoodAmount()
 
   onFoodFormSubmit() {
     console.log(`CALORIES: ${this.caloriesInputted || this.caloriesNumCalculated}`);

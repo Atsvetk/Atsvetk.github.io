@@ -1,91 +1,73 @@
 
-<div class="section-header">
-  Food
+<div class="mat-card-header">
+  <div class="mat-card-title">
+    Food
+  </div>
 </div>
 <div class="section-form">
   <div class="section-fields-container">
-    <div class="section-field" *ngIf="showPetSelectionField">
-      <label>
+    <mat-form-field  *ngIf="showPetSelectionField">
+      <mat-label>
         Pet
-      </label>
-      <select class="pet-type" (change)="onPetUpdate($event)">
-        <option></option>
-        <option *ngFor="let option of petOptions" [value]="option">
+      </mat-label>
+      <mat-select class="pet-type" [(ngModel)]="pet" (selectionChange)="onPetUpdate($event)">
+        <mat-option *ngFor="let option of petOptions" [value]="option">
           {{ option }}
-        </option>
-      </select>
-    </div>
-    <div class="section-field">
-      <label for="caloriesPerDay">
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>
         Calories per day
-      </label>
-      <input class="calories-per-day" type="number" min="0" id="caloriesPerDay" value="{{caloriesNumCalculated}}" (input)="onCaloriesInputUpdate($event)">
-    </div>
-<!--    <div class="section-field">-->
-<!--      <label for="food-type">-->
-<!--        Type-->
-<!--      </label>-->
-<!--      <div class="food-type-values-group" id="food-type">-->
-<!--        <div class="food-type-input">-->
-<!--          <input id="dry-food" type="radio" name="food-type" value="dry">-->
-<!--          <label for="dry-food">Dry</label>-->
-<!--        </div>-->
-<!--        <div class="food-type-input">-->
-<!--          <input id="wet-food" type="radio" name="food-type" value="wet">-->
-<!--          <label for="wet-food">Wet</label>-->
-<!--        </div>-->
-<!--        <div class="food-type-input">-->
-<!--          <input id="hybrid-food" type="radio" name="food-type" value="hybrid">-->
-<!--          <label for="hybrid-food">Hybrid</label>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-    <div class="section-field">
-      <label for="brand">
+      </mat-label>
+      <input matInput class="calories-per-day" type="number" min="0" id="caloriesPerDay" placeholder="0" value="{{caloriesNumCalculated}}" (input)="onCaloriesInputUpdate($event)">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="brand">
         Brand
-      </label>
-      <select class="brand" id="brand" (change)="onBrandUpdate($event)">
-        <option></option>
-        <option *ngFor="let option of brandOptions" [value]="option">
+      </mat-label>
+      <mat-select class="brand" id="brand" [(ngModel)]="brand" (selectionChange)="onBrandUpdate($event)">
+<!--        <option></option>-->
+        <mat-option *ngFor="let option of brandOptions" [value]="option">
           {{ option }}
-        </option>
-      </select>
-    </div>
-    <div class="section-field">
-      <label for="dietDry">
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>
         Diet for dry food
-      </label>
-      <select class="diet" id="dietDry" (change)="onDietDryUpdate($event)">
-        <option *ngFor="let option of dietDryOptions" [value]="option">
+      </mat-label>
+      <mat-select class="diet" id="dietDry" [(ngModel)]="dietDry" (selectionChange)="onDietDryUpdate($event)">
+        <mat-option *ngFor="let option of dietDryOptions" [value]="option">
           {{ option }}
-        </option>
-      </select>
-    </div>
-    <a *ngIf="shouldDisplayDietDryLink" class="diet-link" href="{{dietDryInfo.link}}" target="_blank">More info on {{dietDryInfo.diet}}</a>
-    <div class="section-field">
-      <label for="dietWet">
+        </mat-option>
+      </mat-select>
+      <mat-hint align="end" *ngIf="shouldDisplayDietDryLink">
+        <a class="diet-link" href="{{dietDryInfo?.link}}" target="_blank">More info on {{dietDryInfo?.diet}}
+        </a>
+      </mat-hint>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label for="dietWet">
         Diet for wet food
-      </label>
-      <select class="diet" id="dietWet" (change)="onDietWetUpdate($event)">
-        <option *ngFor="let option of dietWetOptions" [value]="option">
+      </mat-label>
+      <mat-select class="diet" id="dietWet" [(ngModel)]="dietWet" (selectionChange)="onDietWetUpdate($event)">
+        <mat-option *ngFor="let option of dietWetOptions" [value]="option">
           {{ option }}
-        </option>
-      </select>
-    </div>
-    <a *ngIf="shouldDisplayDietWetLink" class="diet-link" href="{{dietWetInfo.link}}" target="_blank">More info on {{dietWetInfo.diet}}</a>
-    <div *ngIf="shouldDisplaySlider()">
-      <label for="wetFoodRange" class="form-label">Select the desired amount of wet food:</label>
-      <input type="range" class="form-range" min="0" max="100" step="10" value="0" id="wetFoodRange">
-      <div class="ticks">
-<!--        <span class="'tick">0</span>-->
-        <span class="tick" *ngFor = "let val of percentages">{{val}}</span>
-      </div>
-    </div>
-  </div>
+        </mat-option>
+      </mat-select>
+      <mat-hint align="end" *ngIf="shouldDisplayDietWetLink">
+        <a class="diet-link" href="{{dietWetInfo?.link}}" target="_blank">More info on {{dietWetInfo?.diet}}
+        </a>
+      </mat-hint>
+    </mat-form-field>
 
-  <button [disabled]="isFoodFormInvalid()" (click)="onFoodFormSubmit()">
-    Calculate food
-  </button>
+  </div>
+  <div *ngIf="shouldDisplaySlider()">
+    <mat-label class="form-label">Select the desired amount of wet food:</mat-label>
+    <br>
+    <mat-slider thumbLabel class="form-range" min="0" max="{{wetFoodMaxAmount}}" step="1" value="0" id="wetFoodRange"></mat-slider>
+  </div>
 </div>
 
 <div class="section-results">

@@ -47,7 +47,7 @@ app-header {
 
 app-section-calories, app-section-food, section {
   width: 450px;
-  height: 600px;
+  height: 650px;
   background-color: #eee;
   margin: 5px;
   padding: 5px;
@@ -67,7 +67,7 @@ app-section-calories, app-section-food, section {
   background: #CCC;
 }
 
-.section-header {
+.section-header, .mat-card-header {
   font-size: 22px;
   font-weight: bold;
   padding-top: 7px;
@@ -82,25 +82,29 @@ app-section-calories, app-section-food, section {
   flex-direction: column;
   justify-content: space-between;
 
-  height: 430px;
+  height: 500px;
 }
 
 .section-fields-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 400px;
   height: 300px;
-  gap: 10px;
+  /*gap: 10px;*/
   align-self: center;
-  padding-top: 20px;
+  padding-top: 10px;
 
   font-size: 18px;
 }
 
-.section-field {
+.section-field-group {
   display: flex;
   justify-content: space-between;
+}
+
+.mat-select-value {
+  text-align: end;
 }
 
 .section-field select.brand {
@@ -134,6 +138,7 @@ app-section-calories, app-section-food, section {
 
 .section-results {
   display: flex;
+  padding-top: 10px;
   height: 75px;
   font-size: 18px;
   border-top-width: 1px;

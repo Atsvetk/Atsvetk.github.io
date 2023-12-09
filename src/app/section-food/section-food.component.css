@@ -1,3 +1,14 @@
+.calories-per-day::-webkit-outer-spin-button,
+.calories-per-day::-webkit-inner-spin-button {
+  display: none;
+}
+
+.calories-per-day {
+  text-align: right;
+  -moz-appearance: textfield;
+}
+
+
 .ticks {
   display: flex;
   justify-content: space-between;

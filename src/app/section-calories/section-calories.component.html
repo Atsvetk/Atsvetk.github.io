@@ -1,56 +1,58 @@
-<div class="section-header">
+<div class="mat-card-header">
+  <div class="mat-card-title">
   Calories
+  </div>
 </div>
 <div class="section-form">
   <div class="section-fields-container">
-    <div class="section-field">
-      <label>
+    <mat-form-field appearance="outline">
+      <mat-label>
         Pet
-      </label>
-      <select class="pet-type" (change)="onPetUpdate($event)">
-        <option></option>
-        <option *ngFor="let option of petOptions" [value]="option">
+      </mat-label>
+      <mat-select
+        [(ngModel)]="petTypeSelected"
+        (selectionChange)="onPetUpdate($event)"
+      >
+        <mat-option *ngFor="let option of petOptions" [value]="option">
           {{ option }}
-        </option>
-      </select>
-    </div>
-    <div class="section-field">
-      <label for="currentBcsInput">
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>
         Current BCS
-      </label>
-      <select class="current-bcs" id="currentBcsInput" (change)="onCurrentBcsSelectUpdate($event)">
-        <option value="default"></option>
-        <option *ngFor="let option of bcsOptions" [value]="option">
+      </mat-label>
+      <mat-select
+        [(ngModel)]="currentBcs"
+        (selectionChange)="onCurrentBcsSelectUpdate($event)"
+      >
+        <mat-option *ngFor="let option of bcsOptions" [value]="option">
           {{ option }}
-        </option>
-      </select>
-    </div>
-    <div class="section-field">
-      <label for="targetBcsInput">
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>
         Target BCS
-      </label>
-      <!--          <input type="number" value="5" min="1" max="9" id="targetBcsInput" (input)="onTargetBcsInputUpdate($event)">-->
-      <select class="target-bcs" id="targetBcsInput" (change)="onTargetBcsSelectUpdate($event)">
-        <option value="default"></option>
-        <option *ngFor="let option of bcsOptions" [value]="option">
+      </mat-label>
+      <mat-select
+        [(ngModel)]="targetBcs"
+        (selectionChange)="onTargetBcsSelectUpdate($event)"
+      >
+        <mat-option *ngFor="let option of bcsOptions" [value]="option">
           {{ option }}
-        </option>
-      </select>
-    </div>
-    <div class="section-field">
-      <label for="currentWeightInput">
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>
         Current body weight
-      </label>
-      <div>
-        <input class="target-weight" type="number" value="{{currentWeight}}" min="0" step="0.1" id="currentWeightInput"
-               (input)="onCurrentWeightUpdate($event)">
-        kg
-      </div>
-    </div>
+      </mat-label>
+      <input matInput class="current-weight" type="number" min="0" step="0.1" id="currentWeightInput"
+               placeholder="0" (input)="onCurrentWeightUpdate($event)">
+      <span matSuffix>   kg</span>
+    </mat-form-field>
   </div>
-<!--  <button id="calculateCaloriesBtn" [disabled]="isCaloriesFormInvalid()" (click)="onCaloriesFormSubmit()">-->
-<!--    Calculate calories-->
-<!--  </button>-->
   <button (click)="onSkipCaloriesForm()">
     I know the calories alright, proceed to Food section
   </button>

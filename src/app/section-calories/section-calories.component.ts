@@ -30,8 +30,8 @@ export class SectionCaloriesComponent implements OnInit {
 
   onPetUpdate(event: any) {
     console.log(event);
-    this.petTypeSelected = (<HTMLSelectElement>event.target).value.toLowerCase();
-    console.log(`PEt Type from section-calories: ${this.petTypeSelected}`);
+    // this.petTypeSelected = (<HTMLSelectElement>event.target).value.toLowerCase();
+    console.log(`Pet Type from section-calories: ${this.petTypeSelected}`);
     this.petSelected.emit(this.petTypeSelected);
     if(this.isCaloriesFormValid()) {
       console.log('Calories submitted!')
@@ -43,8 +43,8 @@ export class SectionCaloriesComponent implements OnInit {
 
   onCurrentBcsSelectUpdate(event: any) {
     console.log(event);
-    this.currentBcs = Number.parseFloat((<HTMLSelectElement>event.target).value);
-    console.log(this.currentBcs);
+    // this.currentBcs = Number.parseFloat((<HTMLSelectElement>event.target).value);
+    console.log('Current BCS: ', this.currentBcs);
     if(this.isCaloriesFormValid()) {
       console.log('Calories submitted!')
       this.caloriesNumCalculated = this.getCalories();
@@ -55,8 +55,7 @@ export class SectionCaloriesComponent implements OnInit {
 
   onTargetBcsSelectUpdate(event: any) {
     console.log(event);
-    this.targetBcs = Number.parseFloat((<HTMLSelectElement>event.target).value);
-    console.log(this.targetBcs);
+    console.log('Target BCS: ', this.targetBcs);
     if(this.isCaloriesFormValid()) {
       console.log('Calories submitted!')
       this.caloriesNumCalculated = this.getCalories();
@@ -113,17 +112,20 @@ export class SectionCaloriesComponent implements OnInit {
     const rawTargetWeight = bcsMultiplier * this.currentWeight;
     this.targetWeight = Math.round((rawTargetWeight + Number.EPSILON) * 100) / 100
     console.log('targetWeight', this.targetWeight)
-    switch(this.petTypeSelected) {
+    switch(this.petTypeSelected.toLowerCase()) {
       case 'cat':
         if(this.targetWeight < 3) {
+          console.log(`It's a light cat!`)
           // 'light' cats
           console.log('Light')
           calories = ( this.targetWeight ** 1.061 ) * 53.7;
         } else if(this.targetWeight > 5.5) {
+          console.log(`It's a heavy cat!`)
           // 'heavy' cats
           console.log('Heavy')
           calories = ( this.targetWeight ** 0.366 ) * 131.8;
         } else {
+          console.log(`It's a normal cat!`)
           // 'normal' cats
           console.log('Normal')
           calories = ( this.targetWeight ** 1.115 ) * 46.8;
@@ -133,7 +135,7 @@ export class SectionCaloriesComponent implements OnInit {
         calories = ( this.targetWeight ** 0.93 ) * 62.5;
         break;
     }
-
+    console.log('Calories calculated: ', calories)
     return Math.round(calories);
   }
 

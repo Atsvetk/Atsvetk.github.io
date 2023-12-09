@@ -5,6 +5,23 @@
   width: 80px;
 }
 
+mat-option {
+  text-align: end;
+}
+
+.current-weight::-webkit-outer-spin-button,
+.current-weight::-webkit-inner-spin-button {
+  display: none;
+}
+
+.current-weight {
+  text-align: right;
+  -moz-appearance: textfield;
+}
+::ng-deep .mat-form-field-suffix {
+  margin-left: 7px;
+}
+
 .calories-results {
   flex-direction: column;
   gap: 10px;
