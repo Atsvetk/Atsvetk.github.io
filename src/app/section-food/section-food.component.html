@@ -1,76 +1,88 @@
-
-<div class="mat-card-header">
-  <div class="mat-card-title">
-    Food
+<mat-card class="raised mat-elevation-z5">
+  <div class="mat-card-header">
+    <div class="mat-card-title">
+      Food
+    </div>
   </div>
-</div>
-<div class="section-form">
-  <div class="section-fields-container">
-    <mat-form-field  *ngIf="showPetSelectionField">
-      <mat-label>
-        Pet
-      </mat-label>
-      <mat-select class="pet-type" [(ngModel)]="pet" (selectionChange)="onPetUpdate($event)">
-        <mat-option *ngFor="let option of petOptions" [value]="option">
-          {{ option }}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>
-        Calories per day
-      </mat-label>
-      <input matInput class="calories-per-day" type="number" min="0" id="caloriesPerDay" placeholder="0" value="{{caloriesNumCalculated}}" (input)="onCaloriesInputUpdate($event)">
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label for="brand">
-        Brand
-      </mat-label>
-      <mat-select class="brand" id="brand" [(ngModel)]="brand" (selectionChange)="onBrandUpdate($event)">
-<!--        <option></option>-->
-        <mat-option *ngFor="let option of brandOptions" [value]="option">
-          {{ option }}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>
-        Diet for dry food
-      </mat-label>
-      <mat-select class="diet" id="dietDry" [(ngModel)]="dietDry" (selectionChange)="onDietDryUpdate($event)">
-        <mat-option *ngFor="let option of dietDryOptions" [value]="option">
-          {{ option }}
-        </mat-option>
-      </mat-select>
-      <mat-hint align="end" *ngIf="shouldDisplayDietDryLink">
-        <a class="diet-link" href="{{dietDryInfo?.link}}" target="_blank">More info on {{dietDryInfo?.diet}}
-        </a>
-      </mat-hint>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label for="dietWet">
-        Diet for wet food
-      </mat-label>
-      <mat-select class="diet" id="dietWet" [(ngModel)]="dietWet" (selectionChange)="onDietWetUpdate($event)">
-        <mat-option *ngFor="let option of dietWetOptions" [value]="option">
-          {{ option }}
-        </mat-option>
-      </mat-select>
-      <mat-hint align="end" *ngIf="shouldDisplayDietWetLink">
-        <a class="diet-link" href="{{dietWetInfo?.link}}" target="_blank">More info on {{dietWetInfo?.diet}}
-        </a>
-      </mat-hint>
-    </mat-form-field>
-
+  <div class="section-form">
+    <div class="section-fields-container">
+      <mat-form-field appearance="outline">
+        <mat-label>
+          Calories per day
+        </mat-label>
+        <input matInput class="calories-per-day" type="number" min="0" id="caloriesPerDay" placeholder="0" value="{{caloriesNumCalculated}}" (change)="onCaloriesInputUpdate($event)">
+        <mat-error align="end">
+          Value should be greater than 0
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label for="brand">
+          Brand
+        </mat-label>
+        <mat-select class="brand" id="brand" [(ngModel)]="brand" (selectionChange)="onBrandUpdate($event)">
+          <mat-option *ngFor="let option of brandOptions" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>
+          Diet for dry food
+        </mat-label>
+        <mat-select class="diet" id="dietDry" [(ngModel)]="dietDry" (selectionChange)="onDietDryUpdate($event)" [value]="dietDry">
+          <mat-option *ngFor="let option of dietDryOptions" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-select>
+        <mat-hint align="end" *ngIf="shouldDisplayDietDryLink">
+          <a class="diet-link" href="{{dietDryInfo?.link}}" target="_blank">More info on {{dietDryInfo?.diet}}
+          </a>
+        </mat-hint>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>
+          Diet for wet food
+        </mat-label>
+        <mat-select class="diet" id="dietWet" [(ngModel)]="dietWet" (selectionChange)="onDietWetUpdate($event)">
+          <mat-option *ngFor="let option of dietWetOptions" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-select>
+        <mat-hint align="end" *ngIf="shouldDisplayDietWetLink">
+          <a class="diet-link" href="{{dietWetInfo?.link}}" target="_blank">More info on {{dietWetInfo?.diet}}
+          </a>
+        </mat-hint>
+      </mat-form-field>
+      <mat-form-field appearance="outline" *ngIf="shouldDisplayWetDesiredAmount()">
+        <mat-label>
+          Desired amount of wet food
+        </mat-label>
+        <input matInput class="wet-food-amount" type="number" min="0" max="{{wetFoodMaxAmount}}" placeholder="0" [(ngModel)]="wetFoodAmount" (change)="onDesiredWetFoodAmountChange($event)">
+        <span matSuffix>   g</span>
+        <mat-hint align="end">
+          The value should be between 0 and {{wetFoodMaxAmount}}
+        </mat-hint>
+        <mat-error align="end">
+          The value should be between 0 and {{wetFoodMaxAmount}}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="section-button-group">
+      <button (click)="onFoodFormSubmit()" mat-raised-button color="primary" [disabled]="!isFoodFormValid()">
+        Calculate food
+      </button>
+    </div>
   </div>
-  <div *ngIf="shouldDisplaySlider()">
-    <mat-label class="form-label">Select the desired amount of wet food:</mat-label>
-    <br>
-    <mat-slider thumbLabel class="form-range" min="0" max="{{wetFoodMaxAmount}}" step="1" value="0" id="wetFoodRange"></mat-slider>
+  <div class="section-results food-results">
+    <p *ngIf="isFoodCalculated && dietDry !== noDietOption">
+      {{brand}} {{dietDry}}:
+      <strong>{{dryFoodAmount}}</strong>
+      g
+    </p>
+    <p *ngIf="isFoodCalculated && dietWet !== noDietOption">
+      {{brand}} {{dietWet}}:
+      <strong>{{wetFoodShownAmount}}</strong>
+      g
+    </p>
   </div>
-</div>
-
-<div class="section-results">
-
-  <!--add the result-->
-</div>
+</mat-card>

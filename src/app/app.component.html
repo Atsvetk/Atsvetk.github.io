@@ -2,17 +2,12 @@
   <app-header></app-header>
   <div class="main-sections-container">
     <app-section-calories
-      class="mat-card"
       (petSelected)="onPetSelected($event)"
       (caloriesCalculated)="onCaloriesCalculated($event)"
-      (caloriesSkipped)="onCaloriesSkipped($event)"
-      [class.section-disabled]="caloriesCalculationSkipped"
     ></app-section-calories>
     <app-section-food
-      class="mat-card food-amount-calculation-main-container"
       [class.section-disabled]="!(caloriesNumCalculated || caloriesCalculationSkipped)"
       [caloriesNumCalculated]="caloriesNumCalculated"
-      [showPetSelectionField]="caloriesCalculationSkipped"
       [pet]="pet"
     ></app-section-food>
   </div>

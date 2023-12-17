@@ -1,8 +1,27 @@
-.section-field select.pet-type,
-.section-field select.current-bcs,
-.section-field select.target-bcs {
-  text-align: right;
-  width: 80px;
+
+.mat-card-title {
+  font-size: 26px;
+}
+
+::ng-deep .mat-form-field-flex > .mat-form-field-infix {
+  padding: 0.1em 0 0.6em 0 !important;
+}
+
+mat-form-field {
+  font-size: 17px;
+}
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+
+  margin: 0 0 0 0
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+  top: -1.5em;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  transform: translateY(-1.1em) scale(.75);
+  width: 133.33333%;
 }
 
 mat-option {
@@ -16,13 +35,18 @@ mat-option {
 
 .current-weight {
   text-align: right;
+  padding-top: 2px;
   -moz-appearance: textfield;
 }
+
 ::ng-deep .mat-form-field-suffix {
   margin-left: 7px;
+  align-self: center;
 }
 
 .calories-results {
   flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: start;
 }

@@ -1,69 +1,67 @@
-<div class="mat-card-header">
-  <div class="mat-card-title">
-  Calories
+<mat-card class="raised mat-elevation-z5">
+  <div class="mat-card-header">
+    <div class="mat-card-title">
+    Calories
+    </div>
   </div>
-</div>
-<div class="section-form">
-  <div class="section-fields-container">
-    <mat-form-field appearance="outline">
-      <mat-label>
-        Pet
-      </mat-label>
-      <mat-select
-        [(ngModel)]="petTypeSelected"
-        (selectionChange)="onPetUpdate($event)"
-      >
-        <mat-option *ngFor="let option of petOptions" [value]="option">
-          {{ option }}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>
-        Current BCS
-      </mat-label>
-      <mat-select
-        [(ngModel)]="currentBcs"
-        (selectionChange)="onCurrentBcsSelectUpdate($event)"
-      >
-        <mat-option *ngFor="let option of bcsOptions" [value]="option">
-          {{ option }}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>
-        Target BCS
-      </mat-label>
-      <mat-select
-        [(ngModel)]="targetBcs"
-        (selectionChange)="onTargetBcsSelectUpdate($event)"
-      >
-        <mat-option *ngFor="let option of bcsOptions" [value]="option">
-          {{ option }}
-        </mat-option>
-      </mat-select>
-    </mat-form-field>
-    <mat-form-field appearance="outline">
-      <mat-label>
-        Current body weight
-      </mat-label>
-      <input matInput class="current-weight" type="number" min="0" step="0.1" id="currentWeightInput"
+  <div class="section-form">
+    <div class="section-fields-container">
+      <mat-form-field appearance="outline" class="pet-type">
+        <mat-label>
+          Pet
+        </mat-label>
+        <mat-select
+          [(ngModel)]="petTypeSelected"
+          (selectionChange)="onPetUpdate($event)"
+        >
+          <mat-option *ngFor="let option of petOptions" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="bcs">
+        <mat-label>
+          Current BCS
+        </mat-label>
+        <mat-select [(ngModel)]="currentBcs">
+          <mat-option *ngFor="let option of bcsOptions" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="bcs">
+        <mat-label>
+          Target BCS
+        </mat-label>
+        <mat-select [(ngModel)]="targetBcs">
+          <mat-option *ngFor="let option of bcsOptions" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="current-weight-field">
+        <mat-label>
+          Current body weight
+        </mat-label>
+        <input matInput class="current-weight" type="number" min="0" step="0.1" id="currentWeightInput"
                placeholder="0" (input)="onCurrentWeightUpdate($event)">
-      <span matSuffix>   kg</span>
-    </mat-form-field>
+        <span matSuffix>   kg</span>
+      </mat-form-field>
+    </div>
+    <div class="section-button-group">
+      <button (click)="onCaloriesFormSubmit()" mat-raised-button color="primary" [disabled]="isCaloriesFormInvalid()">
+        Calculate calories
+      </button>
+    </div>
   </div>
-  <button (click)="onSkipCaloriesForm()">
-    I know the calories alright, proceed to Food section
-  </button>
-</div>
-<div class="section-results calories-results">
-  <p *ngIf="isCaloriesFormValid()">Target weight:
-    <strong>{{targetWeight}}</strong>
-    kg
-  </p>
-  <p *ngIf="isCaloriesFormValid()">Estimated energy requirements per day:
-    <strong>{{caloriesNumCalculated}}</strong>
-    kcal
-  </p>
-</div>
+  <div class="section-results calories-results">
+    <p *ngIf="caloriesNumCalculated">Target weight:
+      <strong>{{targetWeight}}</strong>
+      kg
+    </p>
+    <p *ngIf="caloriesNumCalculated">Estimated energy requirements per day:
+      <strong>{{caloriesNumCalculated}}</strong>
+      kcal
+    </p>
+  </div>
+</mat-card>

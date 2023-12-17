@@ -45,20 +45,20 @@ app-header {
   gap: 10%;
 }
 
-app-section-calories, app-section-food, section {
-  width: 450px;
-  height: 650px;
-  background-color: #eee;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 15px;
-  border-style: solid;
-  border-width: 1px;
+/*app-section-calories, app-section-food, section {*/
+/*  width: 450px;*/
+/*  height: 650px;*/
+/*  background-color: #eee;*/
+/*  margin: 5px;*/
+/*  padding: 5px;*/
+/*  border-radius: 15px;*/
+/*  border-style: solid;*/
+/*  border-width: 1px;*/
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  justify-content: space-between;*/
+/*}*/
 
 .section-disabled {
   /*pointer-events: none; ????? */
@@ -68,11 +68,11 @@ app-section-calories, app-section-food, section {
 }
 
 .section-header, .mat-card-header {
-  font-size: 22px;
+  height: 5%;
   font-weight: bold;
   padding-top: 7px;
   padding-left: 10px;
-  padding-bottom: 3px;
+  /*padding-bottom: 3px;*/
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
@@ -88,33 +88,30 @@ app-section-calories, app-section-food, section {
 .section-fields-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 400px;
-  height: 300px;
-  /*gap: 10px;*/
+  height: 350px;
+  gap: 10px;
   align-self: center;
-  padding-top: 10px;
+  padding-top: 20px;
 
   font-size: 18px;
 }
 
-.section-field-group {
+.section-field-group, .section-button-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 20px 5px;
 }
 
 .mat-select-value {
+  padding-right: 10px;
   text-align: end;
 }
 
-.section-field select.brand {
-  text-align: right;
-  width: 120px;
-}
-
-.section-field select.diet {
-  text-align: right;
-  width: 250px;
+.mat-form-field-wrapper {
+  padding-bottom: 1em;
+  margin: 0 0 0 0 !important;
 }
 
 .section-field input {
@@ -122,25 +119,11 @@ app-section-calories, app-section-food, section {
   width: 54px;
 }
 
-.section-form button {
-  align-self: center;
-
-  display: inline-block;
-  padding: 10px 18px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.section-form button:disabled {
-  cursor: not-allowed;
-}
-
 .section-results {
   display: flex;
   padding-top: 10px;
-  height: 75px;
-  font-size: 18px;
+  height: 65px;
+  font-size: 17px;
   border-top-width: 1px;
   border-top-style: solid;
   align-items: center;
@@ -150,23 +133,6 @@ app-section-calories, app-section-food, section {
 .diet-link {
   font-size: 12px;
   align-self: end;
-}
-
-.food-type-values-group {
-  display: flex;
-  align-items: flex-end;
-  /*justify-content: space-between;*/
-  gap: 15px;
-}
-
-.food-type-input {
-  display: flex;
-  gap: 5px;
-  font-size: 16px;
-}
-
-.food-type-values-group input {
-  width: min-content;
 }
 
 app-footer {
@@ -184,5 +150,3 @@ app-footer {
   background-color: #d5d5d5;
 }
 
-.copyright {
-}

@@ -30,13 +30,6 @@ export class SectionFoodComponent implements OnInit {
   }
   private _pet = '';
 
-  @Input()
-  get showPetSelectionField(): boolean { return this._showPetSelectionField };
-  set showPetSelectionField(showPetSelectionField: boolean) {
-    this._showPetSelectionField = showPetSelectionField;
-  }
-  private _showPetSelectionField = false;
-
   petOptions: string[] = [
     'Cat',
     'Dog'
@@ -47,11 +40,13 @@ export class SectionFoodComponent implements OnInit {
     'Acana',
     'Trovet'
   ];
+  allBrandDiets: {} = {};
   caloriesInputted: number = this.caloriesNumCalculated;
-  dietDry: string = '--None--';
-  dietWet: string = '--None--';
-  dietDryOptions: string[] = ['--None--'];
-  dietWetOptions: string[] = ['--None--'];
+  noDietOption = '--None--';
+  dietDry: string = this.noDietOption;
+  dietWet: string = this.noDietOption;
+  dietDryOptions: string[] = [this.noDietOption];
+  dietWetOptions: string[] = [this.noDietOption];
   brandDietsInfo: DietInfo[] = [];
   dietDryInfo: DietInfo | undefined = {
     diet: '',
@@ -66,119 +61,99 @@ export class SectionFoodComponent implements OnInit {
     link: ''
   }
 
-  percentages = Array.from({length: 11}, (_, i) => i * 10)
-
   shouldDisplayDietDryLink: boolean = false;
   shouldDisplayDietWetLink: boolean = false;
 
   dryFoodAmount: number = 0;
   wetFoodAmount: number = 0;
+  wetFoodShownAmount: number = 0;
   dryFoodMaxAmount: number = 0;
   wetFoodMaxAmount: number = 0;
+  isFoodCalculated: boolean = false;
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    // for (let brandOption of this.brandOptions) {
+    //   this.allBrandDiets[brandOption] =
+    // }
   }
 
   onPetUpdate(event: any) {
-    console.log(event);
-    // this.pet = (<HTMLSelectElement>event.target).value.toLowerCase();
     this.resetDietOptions();
-    console.log(`PEt Type from section-food: ${this.pet}`);
+    this.isFoodCalculated = false;
   }
 
   onCaloriesInputUpdate(event: any) {
-    console.log(event);
     this.caloriesInputted = Number.parseInt((<HTMLSelectElement>event.target).value);
-    console.log(this.caloriesInputted);
+    this.caloriesInputted = this.caloriesInputted < 0 ? 0 : this.caloriesInputted;
+    this.isFoodCalculated = false;
+    this.resetFoodCalculations()
   }
 
   onBrandUpdate(event: any) {
-    console.log(event);
-    // this.brand = (<HTMLSelectElement>event.target).value;
-    console.log(this.brand);
+    this.isFoodCalculated = false;
     if (this.brand !== '') {
       const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
-      this.http.get(dietPath).subscribe( (response: any) => {
-        console.log(response);
+      this.http.get(dietPath).subscribe((response: any) => {
         this.brandDietsInfo = response[this.pet.toLowerCase()];
-      this.getDietDryOptions();
-      this.shouldDisplayDietDryLink = false;
-      this.getDietWetOptions();
-      this.shouldDisplayDietWetLink = false;
+        this.resetDietOptions();
+        this.resetFoodCalculations();
       })
-    } else this.resetDietOptions();
+    }
   }
 
   getDietDryOptions() {
-    // const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
-    // if (this.brand !== '') {
-    //   this.http.get(dietPath).subscribe( (response: any) => {
-    //     console.log(response);
-        this.dietDryOptions = this.brandDietsInfo
-          .filter((dietItem: DietInfo) => dietItem.type === 'dry')
-          .map((dietItem: DietInfo) => dietItem.diet)
-          .sort();
-        this.dietDryOptions = ['--None--', ...this.dietDryOptions]
-      // })
-    // } else {
-    //   this.dietDryOptions = ['--None--'];
-    //   this.shouldDisplayDietDryLink = false;
-    // }
+    this.dietDryOptions = this.brandDietsInfo
+      .filter((dietItem: DietInfo) => dietItem.type === 'dry')
+      .map((dietItem: DietInfo) => dietItem.diet)
+      .sort();
+    this.dietDryOptions = [this.noDietOption, ...this.dietDryOptions]
   }
 
   getDietWetOptions() {
-    // const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
-    // if (this.brand !== '') {
-    //   this.http.get(dietPath).subscribe( (response: any) => {
-    //     console.log(response);
-        this.dietWetOptions = this.brandDietsInfo
-          .filter((dietItem: DietInfo) => dietItem.type === 'wet')
-          .map((dietItem: DietInfo) => dietItem.diet)
-          .sort();
-        this.dietWetOptions = ['--None--', ... this.dietWetOptions]
-      // })
-    // } else {
-    //   this.dietWetOptions = ['--None--'];
-    //   this.shouldDisplayDietWetLink = false;
-    // }
+    this.dietWetOptions = this.brandDietsInfo
+      .filter((dietItem: DietInfo) => dietItem.type === 'wet')
+      .map((dietItem: DietInfo) => dietItem.diet)
+      .sort();
+    this.dietWetOptions = [this.noDietOption, ... this.dietWetOptions]
   }
 
   resetDietOptions() {
     if (this.brand === '') {
-      this.dietDryOptions = ['--None--'];
-      this.dietWetOptions = ['--None--'];
+      this.dietDryOptions = [this.noDietOption];
+      this.dietWetOptions = [this.noDietOption];
     } else {
       this.getDietDryOptions();
       this.getDietWetOptions();
     }
+    this.dietDry = this.noDietOption;
+    this.dietWet = this.noDietOption;
     this.shouldDisplayDietDryLink = false;
     this.shouldDisplayDietWetLink = false;
   }
 
+  resetFoodCalculations() {
+    this.dryFoodAmount = 0;
+    this.wetFoodAmount = 0;
+    this.wetFoodShownAmount = 0;
+    this.dryFoodMaxAmount = this.dietDry === this.noDietOption ? 0 : this.getDryFoodMaxAmount();
+    this.wetFoodMaxAmount = this.dietWet === this.noDietOption ? 0 : this.getWetFoodMaxAmount();
+  }
+
   getDietDryInfo() {
-    // const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
-    // this.http.get(dietPath).subscribe( (response: any) => {
-    //   console.log(response);
-      this.dietDryInfo = this.brandDietsInfo
-        .find((diet: DietInfo) => diet.diet === this.dietDry)
-    // })
+    this.dietDryInfo = this.brandDietsInfo
+      .find((diet: DietInfo) => diet.diet === this.dietDry)
   }
 
   getDietWetInfo() {
-    // const dietPath: string = `/assets/diets/${this.brand.toLowerCase()}.json`;
-    // this.http.get(dietPath).subscribe( (response: any) => {
-      // console.log(response);
-      this.dietWetInfo = this.brandDietsInfo
-        .find((diet: DietInfo) => diet.diet === this.dietWet)
-      console.log('WET DIET INFO:', JSON.stringify(this.dietWetInfo))
-    // })
+    this.dietWetInfo = this.brandDietsInfo
+      .find((diet: DietInfo) => diet.diet === this.dietWet)
   }
 
   onDietDryUpdate(event: any) {
-    console.log(event);
-    // this.dietDry = (<HTMLSelectElement>event.target).value;
-    if(this.dietDry != '--None--') {
+    this.isFoodCalculated = false;
+    if(this.dietDry != this.noDietOption) {
       this.getDietDryInfo();
       if(this.dietDryInfo){
         this.shouldDisplayDietDryLink = true;
@@ -187,13 +162,11 @@ export class SectionFoodComponent implements OnInit {
     } else {
       this.shouldDisplayDietDryLink = false;
     }
-    console.log(`DIET DRY: ${this.dietDry}`)
   }
 
   onDietWetUpdate(event: any) {
-    console.log(event);
-    // this.dietWet = (<HTMLSelectElement>event.target).value;
-    if(this.dietWet != '--None--') {
+    this.isFoodCalculated = false;
+    if(this.dietWet != this.noDietOption) {
       this.getDietWetInfo();
       if(this.dietWetInfo) {
         this.shouldDisplayDietWetLink = true;
@@ -203,49 +176,56 @@ export class SectionFoodComponent implements OnInit {
     } else {
       this.shouldDisplayDietWetLink = false;
     }
-    console.log(`DIET WET: ${this.dietWet}`)
   }
 
   isFoodFormInvalid() {
     return !(
       (!!this.caloriesInputted || !!this.caloriesNumCalculated)
       && !!this.brand
-      && (!!this.dietDry || !!this.dietWet)
+      && ((this.dietDry !== this.noDietOption || this.dietWet !== this.noDietOption))
     )
   }
 
-  shouldDisplaySlider() {
-    return (this.dietDry !== '--None--') && (this.dietWet !== '--None--')
+  shouldDisplayWetDesiredAmount() {
+    return (this.dietDry !== this.noDietOption) && (this.dietWet !== this.noDietOption)
   }
 
   getDryFoodMaxAmount() {
     if(this.dietDryInfo) {
-      console.log('CALORIES NEEDED:', this.caloriesInputted || this.caloriesNumCalculated);
-      console.log('CALORIES FROM DIET INFO:', this.dietDryInfo.calories);
-      console.log('DRY FOOD MAX AMOUNT:', Math.round( (this.caloriesInputted || this.caloriesNumCalculated) * 1000 / this.dietDryInfo.calories));
       return Math.round( (this.caloriesInputted || this.caloriesNumCalculated) * 1000 / this.dietDryInfo.calories);
-    } else {
-      return 0
-    }
-
+    } else return 0
   }
-
 
   getWetFoodMaxAmount() {
     if(this.dietWetInfo) {
-      console.log('CALORIES NEEDED:', this.caloriesInputted || this.caloriesNumCalculated);
-      console.log('CALORIES FROM DIET INFO:', this.dietWetInfo.calories);
-      console.log('WET FOOD MAX AMOUNT:', Math.round( (this.caloriesInputted || this.caloriesNumCalculated) * 1000 / this.dietWetInfo.calories));
       return Math.round( (this.caloriesInputted || this.caloriesNumCalculated) * 1000 / this.dietWetInfo.calories);
     } else return 0
-
   }
 
-  // getDesiredDryFoodAmount()
+  onDesiredWetFoodAmountChange(event: any) {
+    this.wetFoodAmount = Number.parseInt((<HTMLSelectElement>event.target).value);
+    this.wetFoodAmount = this.wetFoodAmount < 0 ? 0 :
+      this.wetFoodAmount > this.wetFoodMaxAmount ? this.wetFoodMaxAmount : this.wetFoodAmount;
+    this.isFoodCalculated = false;
+  }
+
+  getDesiredDryFoodAmount() {
+    const wetFoodPart = this.wetFoodAmount / this.wetFoodMaxAmount || 0;
+    this.dryFoodAmount = Math.round(this.dryFoodMaxAmount - this.dryFoodMaxAmount * wetFoodPart)
+  }
+
+  isFoodFormValid() {
+    return (
+      !!this.pet &&
+      !!(this.caloriesInputted || this.caloriesNumCalculated) &&
+      ( (this.dietDry !== this.noDietOption || this.dietWet !== this.noDietOption) ||
+      (this.dietDry !== this.noDietOption && this.dietWet !== this.noDietOption && !isNaN(this.wetFoodAmount)) )
+    )
+  }
 
   onFoodFormSubmit() {
-    console.log(`CALORIES: ${this.caloriesInputted || this.caloriesNumCalculated}`);
-    console.log(`DRY FOOD: ${JSON.stringify(this.dietDryInfo, null, 2) || 'NO INFO'}`)
-    console.log(`WET FOOD: ${JSON.stringify(this.dietWetInfo, null, 2) || 'NO INFO'}`)
+    this.getDesiredDryFoodAmount();
+    this.isFoodCalculated = true;
+    this.wetFoodShownAmount = this.dryFoodAmount ? this.wetFoodAmount : this.wetFoodMaxAmount;
   }
 }
