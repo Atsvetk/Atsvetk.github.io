@@ -29,12 +29,6 @@
       "type": "wet",
       "calories": 1342,
       "link": "https://emea.acana.com/en/cats/cat-food/acana-premium-p%C3%A2t%C3%A9%2C-kitten-recipe%C2%A0-%C2%A0/eu-premium-pate-kitten-recipe.html"
-    },
-    {
-      "diet": "",
-      "type": "",
-      "calories": 0,
-      "link": ""
     }
   ],
   "cat": [
@@ -103,12 +97,6 @@
       "type": "wet",
       "calories": 1424,
       "link": "https://emea.acana.com/en/cats/cat-food/acana-premium-p%C3%A2t%C3%A9%2C-chicken-recipe/eu-premium-pate-cat-chicken-recipe.html"
-    },
-    {
-      "diet": "",
-      "type": "",
-      "calories": 0,
-      "link": ""
     }
   ],
   "puppy": [
@@ -183,12 +171,6 @@
       "type": "dry",
       "calories": 3850,
       "link": "https://emea.acana.com/en/dogs/dog-food/pacifica/eu-aca-pacifica.html"
-    },
-    {
-      "diet": "",
-      "type": "dry",
-      "calories": 0,
-      "link": ""
     }
   ],
   "dog": [
@@ -287,12 +269,6 @@
       "type": "dry",
       "calories": 3810,
       "link": "https://emea.acana.com/en/dogs/dog-food/grasslands/eu-aca-grasslands.html"
-    },
-    {
-      "diet": "",
-      "type": "",
-      "calories": 0,
-      "link": ""
     }
   ]
 }

@@ -26,6 +26,392 @@
       "calories": 1011,
       "gramsPerPack": [85],
       "link": "https://www.trovet.com/product/renal-oxalate-cat/"
+    },
+    {
+      "diet": "Urinary Struvite",
+      "type": "dry",
+      "calories": 4083,
+      "link": "https://www.trovet.com/product/urinary-struvite-cat/"
+    },
+    {
+      "diet": "Urinary Struvite Can Beef",
+      "type": "wet",
+      "calories": 1061,
+      "link": "https://www.trovet.com/product/urinary-struvite-cat/"
+    },
+    {
+      "diet": "Urinary Struvite Can Chicken",
+      "type": "wet",
+      "calories": 1021,
+      "link": "https://www.trovet.com/product/urinary-struvite-cat/"
+    },
+    {
+      "diet": "Urinary Struvite Pouch Chicken",
+      "type": "wet",
+      "calories": 1026,
+      "link": "https://www.trovet.com/product/urinary-struvite-cat/"
+    },
+    {
+      "diet": "Urinary Calm",
+      "type": "dry",
+      "calories": 3474,
+      "link": "https://www.trovet.com/product/urinary-calm-cat/"
+    },
+    {
+      "diet": "Urinary Calm",
+      "type": "wet",
+      "calories": 1008,
+      "link": "https://www.trovet.com/product/urinary-calm-cat/"
+    },
+    {
+      "diet": "Hepatic",
+      "type": "dry",
+      "calories": 3675,
+      "link": "https://www.trovet.com/product/hepatic-cat/"
+    },
+    {
+      "diet": "Hepatic",
+      "type": "wet",
+      "calories": 1067,
+      "link": "https://www.trovet.com/product/hepatic-cat/"
+    },
+    {
+      "diet": "Intestinal",
+      "type": "dry",
+      "calories": 3873,
+      "link": "https://www.trovet.com/product/intestinal-cat/"
+    },
+    {
+      "diet": "Intestinal Can",
+      "type": "wet",
+      "calories": 793,
+      "link": "https://www.trovet.com/product/intestinal-cat/"
+    },
+    {
+      "diet": "Intestinal Pouch Chicken",
+      "type": "wet",
+      "calories": 863,
+      "link": "https://www.trovet.com/product/intestinal-cat/"
+    },
+    {
+      "diet": "Renal Venison",
+      "type": "dry",
+      "calories": 3903,
+      "link": "https://www.trovet.com/product/renal-venison-cat/"
+    },
+    {
+      "diet": "Renal Venison",
+      "type": "wet",
+      "calories": 743,
+      "link": "https://www.trovet.com/product/renal-venison-cat/"
+    },
+    {
+      "diet": "Weight & Diabetic",
+      "type": "dry",
+      "calories": 3254,
+      "link": "https://www.trovet.com/product/weight-diabetic-cat/"
+    },
+    {
+      "diet": "Recovery Liquid",
+      "type": "wet",
+      "calories": 694,
+      "link": "https://www.trovet.com/product/recovery-liquid-cat/"
+    },
+    {
+      "diet": "Unique Protein Venison",
+      "type": "wet",
+      "calories": 771,
+      "link": "https://www.trovet.com/product/unique-protein-venison-cat/"
+    },
+    {
+      "diet": "Unique Protein Turkey",
+      "type": "wet",
+      "calories": 878,
+      "link": "https://www.trovet.com/product/unique-protein-turkey-cat/"
+    },
+    {
+      "diet": "Unique Protein Rabbit",
+      "type": "wet",
+      "calories": 796,
+      "link": "https://www.trovet.com/product/unique-protein-rabbit-cat/"
+    },
+    {
+      "diet": "Unique Protein Lamb",
+      "type": "wet",
+      "calories": 828,
+      "link": "https://www.trovet.com/product/unique-protein-lamb-cat/"
+    },
+    {
+      "diet": "Unique Protein Horse",
+      "type": "wet",
+      "calories": 831,
+      "link": "https://www.trovet.com/product/unique-protein-horse-cat/"
+    },
+    {
+      "diet": "Hypoallergenic Venison",
+      "type": "wet",
+      "calories": 652,
+      "link": "https://www.trovet.com/product/hypoallergenic-venison-cat/"
+    },
+    {
+      "diet": "Hypoallergenic Insect",
+      "type": "dry",
+      "calories": 3622,
+      "link": "https://www.trovet.com/product/hypoallergenic-insect-cat/"
+    },
+    {
+      "diet": "Hypoallergenic Turkey",
+      "type": "wet",
+      "calories": 729,
+      "link": "https://www.trovet.com/product/hypoallergenic-turkey-cat/"
+    },
+    {
+      "diet": "Hypoallergenic Rabbit",
+      "type": "dry",
+      "calories": 3840,
+      "link": "https://www.trovet.com/product/hypoallergenic-rabbit-cat/"
+    },
+    {
+      "diet": "Hypoallergenic Rabbit",
+      "type": "wet",
+      "calories": 800,
+      "link": "https://www.trovet.com/product/hypoallergenic-rabbit-cat/"
+    },
+    {
+      "diet": "Hypoallergenic Lamb",
+      "type": "dry",
+      "calories": 3673,
+      "link": "https://www.trovet.com/product/hypoallergenic-lamb-cat/"
+    },
+    {
+      "diet": "Hypoallergenic Lamb",
+      "type": "wet",
+      "calories": 672,
+      "link": "https://www.trovet.com/product/hypoallergenic-lamb-cat/"
+    },
+    {
+      "diet": "Hypoallergenic Horse",
+      "type": "wet",
+      "calories": 684,
+      "link": "https://www.trovet.com/product/hypoallergenic-horse-cat/"
+    },
+    {
+      "diet": "Sterilised",
+      "type": "dry",
+      "calories": 3352,
+      "link": "https://www.trovet.com/product/sterilised-cat/"
+    }
+  ],
+  "dog": [
+    {
+      "diet": "Urinary Struvite",
+      "type": "dry",
+      "calories": 3861,
+      "link": "https://www.trovet.com/product/urinary-struvite-dog/"
+    },
+    {
+      "diet": "Urinary Struvite",
+      "type": "wet",
+      "calories": 1085,
+      "link": "https://www.trovet.com/product/urinary-struvite-dog/"
+    },
+    {
+      "diet": "Dental",
+      "type": "dry",
+      "calories": 3478,
+      "link": "https://www.trovet.com/product/dental-dog/"
+    },
+    {
+      "diet": "Mobility & Geriatrics",
+      "type": "dry",
+      "calories": 3725,
+      "link": "https://www.trovet.com/product/mobility-geriatrics-dog/"
+    },
+    {
+      "diet": "Regulator",
+      "type": "dry",
+      "calories": 3630,
+      "link": "https://www.trovet.com/product/regulator-dog/"
+    },
+    {
+      "diet": "Hepatic",
+      "type": "dry",
+      "calories": 3793,
+      "link": "https://www.trovet.com/product/hepatic-dog/"
+    },
+    {
+      "diet": "Hepatic",
+      "type": "wet",
+      "calories": 954,
+      "link": "https://www.trovet.com/product/hepatic-dog/"
+    },
+    {
+      "diet": "Intestinal",
+      "type": "dry",
+      "calories": 3708,
+      "link": "https://www.trovet.com/product/intestinal-dog/"
+    },
+    {
+      "diet": "Intestinal",
+      "type": "wet",
+      "calories": 911,
+      "link": "https://www.trovet.com/product/intestinal-dog/"
+    },
+    {
+      "diet": "Renal & Oxalate",
+      "type": "dry",
+      "calories": 3895,
+      "link": "https://www.trovet.com/product/renal-oxalate-dog/"
+    },
+    {
+      "diet": "Renal & Oxalate",
+      "type": "wet",
+      "calories": 1169,
+      "link": "https://www.trovet.com/product/renal-oxalate-dog/"
+    },
+    {
+      "diet": "Weight & Diabetic",
+      "type": "dry",
+      "calories": 2997,
+      "link": "https://www.trovet.com/product/weight-diabetic-dog/"
+    },
+    {
+      "diet": "Weight & Diabetic",
+      "type": "wet",
+      "calories": 648,
+      "link": "https://www.trovet.com/product/weight-diabetic-dog/"
+    },
+    {
+      "diet": "Recovery Liquid",
+      "type": "wet",
+      "calories": 694,
+      "link": "https://www.trovet.com/product/recovery-liquid-dog/"
+    },
+    {
+      "diet": "Unique Protein Venison",
+      "type": "wet",
+      "calories": 771,
+      "link": "https://www.trovet.com/product/unique-protein-venison-dog/"
+    },
+    {
+      "diet": "Unique Protein Turkey",
+      "type": "wet",
+      "calories": 878,
+      "link": "https://www.trovet.com/product/unique-protein-turkey-dog/"
+    },
+    {
+      "diet": "Unique Protein Rabbit",
+      "type": "wet",
+      "calories": 796,
+      "link": "https://www.trovet.com/product/unique-protein-rabbit-dog/"
+    },
+    {
+      "diet": "Unique Protein Lamb",
+      "type": "wet",
+      "calories": 828,
+      "link": "https://www.trovet.com/product/unique-protein-lamb-dog/"
+    },
+    {
+      "diet": "Unique Protein Horse",
+      "type": "wet",
+      "calories": 831,
+      "link": "https://www.trovet.com/product/unique-protein-horse-dog/"
+    },
+    {
+    "diet": "Hypoallergenic Venison",
+    "type": "dry",
+    "calories": 3673,
+    "link": "https://www.trovet.com/product/hypoallergenic-venison-dog/"
+    },
+    {
+    "diet": "Hypoallergenic Venison",
+    "type": "wet",
+    "calories": 713,
+    "link": "https://www.trovet.com/product/hypoallergenic-venison-dog/"
+    },
+    {
+    "diet": "Hypoallergenic Insect",
+    "type": "dry",
+    "calories": 3624,
+    "link": "https://www.trovet.com/product/hypoallergenic-insect-dog/"
+    },
+    {
+    "diet": "Hypoallergenic Insect",
+    "type": "wet",
+    "calories": 948,
+    "link": "https://www.trovet.com/product/hypoallergenic-insect-dog/"
+    },
+    {
+    "diet": "Hypoallergenic Turkey",
+    "type": "wet",
+    "calories": 803,
+    "link": "https://www.trovet.com/product/hypoallergenic-turkey-dog/"
+    },
+    {
+      "diet": "Hypoallergenic Insect",
+      "type": "dry",
+      "calories": 3825,
+      "link": "https://www.trovet.com/product/hypoallergenic-rabbit-dog/"
+    },
+    {
+      "diet": "Hypoallergenic Insect",
+      "type": "wet",
+      "calories": 983,
+      "link": "https://www.trovet.com/product/hypoallergenic-rabbit-dog/"
+    },
+    {
+      "diet": "Hypoallergenic Lamb",
+      "type": "dry",
+      "calories": 3767,
+      "link": "https://www.trovet.com/product/hypoallergenic-lamb-dog/"
+    },
+    {
+      "diet": "Hypoallergenic Lamb",
+      "type": "wet",
+      "calories": 891,
+      "link": "https://www.trovet.com/product/hypoallergenic-lamb-dog/"
+    },
+    {
+      "diet": "Hypoallergenic Horse",
+      "type": "dry",
+      "calories": 3608,
+      "link": "https://www.trovet.com/product/hypoallergenic-horse-dog/"
+    },
+    {
+      "diet": "Hypoallergenic Horse",
+      "type": "wet",
+      "calories": 785,
+      "link": "https://www.trovet.com/product/hypoallergenic-horse-dog/"
+    },
+    {
+    "diet": "Exclusion",
+    "type": "dry",
+    "calories": 3587,
+    "link": "https://www.trovet.com/product/exclusion-dog/"
+    },
+    {
+    "diet": "Adult",
+    "type": "dry",
+    "calories": 3693,
+    "link": "https://www.trovet.com/product/adult-dog/"
+    },
+    {
+    "diet": "Adult",
+    "type": "wet",
+    "calories": 925,
+    "link": "https://www.trovet.com/product/adult-dog/"
+    },
+    {
+    "diet": "Puppy",
+    "type": "dry",
+    "calories": 3708,
+    "link": "https://www.trovet.com/product/puppy-dog/"
+    },
+    {
+    "diet": "Puppy",
+    "type": "wet",
+    "calories": 879,
+    "link": "https://www.trovet.com/product/puppy-dog/"
     }
   ]
 }
