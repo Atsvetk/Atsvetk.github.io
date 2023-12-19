@@ -10,13 +10,15 @@ import { FooterComponent } from './footer/footer.component';
 import { SectionContainerComponent } from './section-container/section-container.component';
 import { SectionCaloriesComponent } from './section-calories/section-calories.component';
 import { SectionFoodComponent } from './section-food/section-food.component';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatSliderModule} from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { DietAutocompleteComponent } from './section-food/diet-autocomplete/diet-autocomplete.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,7 @@ import {MatCardModule} from '@angular/material/card';
     SectionContainerComponent,
     SectionCaloriesComponent,
     SectionFoodComponent,
+    DietAutocompleteComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,7 +41,12 @@ import {MatCardModule} from '@angular/material/card';
     MatInputModule,
     MatSliderModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatAutocompleteModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatAutocompleteModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

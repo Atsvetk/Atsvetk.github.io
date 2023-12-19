@@ -6,9 +6,10 @@
       (caloriesCalculated)="onCaloriesCalculated($event)"
     ></app-section-calories>
     <app-section-food
-      [class.section-disabled]="!(caloriesNumCalculated || caloriesCalculationSkipped)"
+      [class.section-disabled]="!(caloriesNumCalculated)"
       [caloriesNumCalculated]="caloriesNumCalculated"
       [pet]="pet"
+      [shouldBeDisabled]="!caloriesNumCalculated"
     ></app-section-food>
   </div>
   <app-footer></app-footer>

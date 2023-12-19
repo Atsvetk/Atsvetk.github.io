@@ -1,0 +1,17 @@
+<form disabled class="example-form">
+  <mat-form-field [class.mat-form-field-disabled]="shouldBeDisabled" appearance="outline">
+    <mat-label>
+      {{title}}
+    </mat-label>
+    <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onSelectionChange($event)">
+      <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+        {{option}}
+      </mat-option>
+    </mat-autocomplete>
+    <mat-hint align="end" *ngIf="shouldDisplayLink">
+      <a class="diet-link" href="{{dietLink}}" target="_blank">More info on {{diet}}
+      </a>
+    </mat-hint>
+  </mat-form-field>
+</form>

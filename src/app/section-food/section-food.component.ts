@@ -1,5 +1,8 @@
-import { Component, Input, OnInit } from '@angular/core';
+import {Component, Input, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {FormControl} from '@angular/forms';
+import {Observable} from 'rxjs';
+import {map, startWith} from 'rxjs/operators';
 
 type DietInfo = {
   diet: string,
@@ -11,7 +14,7 @@ type DietInfo = {
 @Component({
   selector: 'app-section-food',
   templateUrl: './section-food.component.html',
-  styleUrls: ['./section-food.component.css']
+  styleUrls: ['./section-food.component.css'],
 })
 
 export class SectionFoodComponent implements OnInit {
@@ -29,6 +32,13 @@ export class SectionFoodComponent implements OnInit {
     this._pet = pet;
   }
   private _pet = '';
+
+  @Input()
+  get shouldBeDisabled(): boolean { return this._shouldBeDisabled };
+  set shouldBeDisabled(shouldBeDisabled: boolean) {
+    this._shouldBeDisabled = shouldBeDisabled;
+  }
+  private _shouldBeDisabled = false
 
   petOptions: string[] = [
     'Cat',
@@ -71,12 +81,25 @@ export class SectionFoodComponent implements OnInit {
   wetFoodMaxAmount: number = 0;
   isFoodCalculated: boolean = false;
 
+  dryDietFormControl = new FormControl('');
+  filteredDryDietOptions: Observable<string[]> | undefined;
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    // for (let brandOption of this.brandOptions) {
-    //   this.allBrandDiets[brandOption] =
-    // }
+  }
+
+  onDietDryInputClick() {
+    this.filteredDryDietOptions = this.dryDietFormControl.valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value || '')),
+    );
+  }
+
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+
+    return this.dietDryOptions.filter(option => option.toLowerCase().includes(filterValue));
   }
 
   onPetUpdate(event: any) {
@@ -143,15 +166,19 @@ export class SectionFoodComponent implements OnInit {
 
   getDietDryInfo() {
     this.dietDryInfo = this.brandDietsInfo
+      .filter((dietItem: DietInfo) => dietItem.type === 'dry')
       .find((diet: DietInfo) => diet.diet === this.dietDry)
   }
 
   getDietWetInfo() {
     this.dietWetInfo = this.brandDietsInfo
+      .filter((dietItem: DietInfo) => dietItem.type === 'wet')
       .find((diet: DietInfo) => diet.diet === this.dietWet)
   }
 
   onDietDryUpdate(event: any) {
+    console.log(`On Dry Diet Update EVENT: ${event}`)
+    this.dietDry = event;
     this.isFoodCalculated = false;
     if(this.dietDry != this.noDietOption) {
       this.getDietDryInfo();
@@ -165,6 +192,7 @@ export class SectionFoodComponent implements OnInit {
   }
 
   onDietWetUpdate(event: any) {
+    this.dietWet = event;
     this.isFoodCalculated = false;
     if(this.dietWet != this.noDietOption) {
       this.getDietWetInfo();
