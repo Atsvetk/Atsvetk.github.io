@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { SectionContainerComponent } from './section-container/section-container.component';
 import { SectionCaloriesComponent } from './section-calories/section-calories.component';
 import { SectionFoodComponent } from './section-food/section-food.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
@@ -19,16 +18,21 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { DietAutocompleteComponent } from './section-food/diet-autocomplete/diet-autocomplete.component';
+import { CreditsOverlayComponent } from './footer/credits-overlay/credits-overlay.component';
+import {OverlayModule} from '@angular/cdk/overlay';
+import {A11yModule} from '@angular/cdk/a11y';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SectionContainerComponent,
     SectionCaloriesComponent,
     SectionFoodComponent,
     DietAutocompleteComponent,
+    CreditsOverlayComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,11 @@ import { DietAutocompleteComponent } from './section-food/diet-autocomplete/diet
     MatFormFieldModule,
     MatInputModule,
     MatAutocompleteModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    OverlayModule,
+    A11yModule,
+    MatDividerModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

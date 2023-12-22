@@ -72,4 +72,8 @@ export class DietAutocompleteComponent implements OnInit {
     this.diet = event.option.value;
     this.dietSelected.emit(this.diet);
   }
+  resetDiet() {
+    this.diet = '';
+    this.dietSelected.emit(this.diet);
+  }
 }

@@ -12,4 +12,9 @@ export class FooterComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  creditsShown = false;
+
+  onCreditsClick() {
+    this.creditsShown = !this.creditsShown;
+  }
 }

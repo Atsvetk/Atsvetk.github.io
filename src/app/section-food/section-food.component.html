@@ -1,4 +1,4 @@
-<mat-card class="raised mat-elevation-z5">
+<mat-card class="raised mat-elevation-z10">
   <div class="mat-card-header">
     <div class="mat-card-title">
       Food
@@ -43,47 +43,6 @@
         [shouldDisplayLink]="shouldDisplayDietWetLink"
         [dietLink]="dietWetInfo?.link"
       ></app-diet-autocomplete>
-<!--      <mat-form-field appearance="outline">-->
-<!--        <mat-label>-->
-<!--          Diet for dry food-->
-<!--        </mat-label>-->
-<!--        <input type="text"-->
-<!--               matInput-->
-<!--               [matAutocomplete]="auto"-->
-<!--               (input)="onDietDryInputClick()"-->
-<!--               (change)="onDietDryUpdate($event)"-->
-<!--        >-->
-<!--        <mat-autocomplete #auto="matAutocomplete">-->
-<!--          <mat-option *ngFor="let option of filteredDryDietOptions | async" [value]="option">-->
-<!--            {{option}}-->
-<!--          </mat-option>-->
-<!--        </mat-autocomplete>-->
-
-<!--        <mat-select class="diet" id="dietDry" [(ngModel)]="dietDry" (selectionChange)="onDietDryUpdate($event)" [value]="dietDry">-->
-<!--          <mat-option *ngFor="let option of dietDryOptions" [value]="option">-->
-<!--            {{ option }}-->
-<!--          </mat-option>-->
-<!--        </mat-select>-->
-
-<!--        <mat-hint align="end" *ngIf="shouldDisplayDietDryLink">-->
-<!--          <a class="diet-link" href="{{dietDryInfo?.link}}" target="_blank">More info on {{dietDryInfo?.diet}}-->
-<!--          </a>-->
-<!--        </mat-hint>-->
-<!--      </mat-form-field>-->
-<!--      <mat-form-field appearance="outline">-->
-<!--        <mat-label>-->
-<!--          Diet for wet food-->
-<!--        </mat-label>-->
-<!--        <mat-select class="diet" id="dietWet" [(ngModel)]="dietWet" (selectionChange)="onDietWetUpdate($event)">-->
-<!--          <mat-option *ngFor="let option of dietWetOptions" [value]="option">-->
-<!--            {{ option }}-->
-<!--          </mat-option>-->
-<!--        </mat-select>-->
-<!--        <mat-hint align="end" *ngIf="shouldDisplayDietWetLink">-->
-<!--          <a class="diet-link" href="{{dietWetInfo?.link}}" target="_blank">More info on {{dietWetInfo?.diet}}-->
-<!--          </a>-->
-<!--        </mat-hint>-->
-<!--      </mat-form-field>-->
       <mat-form-field appearance="outline" *ngIf="shouldDisplayWetDesiredAmount()">
         <mat-label>
           Desired amount of wet food
@@ -105,12 +64,12 @@
     </div>
   </div>
   <div class="section-results food-results">
-    <p *ngIf="isFoodCalculated && dietDry !== noDietOption">
+    <p *ngIf="isFoodCalculated && dietDry && dietDry !== noDietOption">
       {{brand}} {{dietDry}}:
       <strong>{{dryFoodAmount}}</strong>
       g
     </p>
-    <p *ngIf="isFoodCalculated && dietWet !== noDietOption">
+    <p *ngIf="isFoodCalculated && dietWet && dietWet !== noDietOption">
       {{brand}} {{dietWet}}:
       <strong>{{wetFoodShownAmount}}</strong>
       g

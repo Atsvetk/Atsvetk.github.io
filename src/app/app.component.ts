@@ -16,7 +16,6 @@ export class AppComponent implements OnInit {
   pet: string = '';
 
   caloriesNumCalculated: number = 0;
-  caloriesCalculationSkipped: boolean = false;
 
   isInputFormSubmitted: boolean = false;
   rangeValue: number = 0;

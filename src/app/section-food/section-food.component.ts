@@ -23,6 +23,7 @@ export class SectionFoodComponent implements OnInit {
   get caloriesNumCalculated(): number { return this._caloriesNumCalculated };
   set caloriesNumCalculated(caloriesNumCalculated: number) {
     this._caloriesNumCalculated = caloriesNumCalculated;
+    this.resetFoodCalculations();
   }
   private _caloriesNumCalculated = 0;
 
@@ -89,19 +90,6 @@ export class SectionFoodComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onDietDryInputClick() {
-    this.filteredDryDietOptions = this.dryDietFormControl.valueChanges.pipe(
-      startWith(''),
-      map(value => this._filter(value || '')),
-    );
-  }
-
-  private _filter(value: string): string[] {
-    const filterValue = value.toLowerCase();
-
-    return this.dietDryOptions.filter(option => option.toLowerCase().includes(filterValue));
-  }
-
   onPetUpdate(event: any) {
     this.resetDietOptions();
     this.isFoodCalculated = false;
@@ -160,8 +148,9 @@ export class SectionFoodComponent implements OnInit {
     this.dryFoodAmount = 0;
     this.wetFoodAmount = 0;
     this.wetFoodShownAmount = 0;
-    this.dryFoodMaxAmount = this.dietDry === this.noDietOption ? 0 : this.getDryFoodMaxAmount();
-    this.wetFoodMaxAmount = this.dietWet === this.noDietOption ? 0 : this.getWetFoodMaxAmount();
+    this.dryFoodMaxAmount = this.dietDry && this.dietDry === this.noDietOption ? 0 : this.getDryFoodMaxAmount();
+    this.wetFoodMaxAmount = this.dietWet && this.dietWet === this.noDietOption ? 0 : this.getWetFoodMaxAmount();
+    this.isFoodCalculated = false;
   }
 
   getDietDryInfo() {
@@ -177,16 +166,17 @@ export class SectionFoodComponent implements OnInit {
   }
 
   onDietDryUpdate(event: any) {
-    console.log(`On Dry Diet Update EVENT: ${event}`)
     this.dietDry = event;
     this.isFoodCalculated = false;
-    if(this.dietDry != this.noDietOption) {
+    if(this.dietDry && this.dietDry != this.noDietOption) {
       this.getDietDryInfo();
       if(this.dietDryInfo){
         this.shouldDisplayDietDryLink = true;
         this.dryFoodMaxAmount = this.getDryFoodMaxAmount();
       }
     } else {
+      this.dryFoodAmount = 0;
+      this.dryFoodMaxAmount = 0;
       this.shouldDisplayDietDryLink = false;
     }
   }
@@ -194,28 +184,22 @@ export class SectionFoodComponent implements OnInit {
   onDietWetUpdate(event: any) {
     this.dietWet = event;
     this.isFoodCalculated = false;
-    if(this.dietWet != this.noDietOption) {
+    if(this.dietWet && this.dietWet != this.noDietOption) {
       this.getDietWetInfo();
       if(this.dietWetInfo) {
         this.shouldDisplayDietWetLink = true;
         this.wetFoodMaxAmount = this.getWetFoodMaxAmount();
-
       }
     } else {
+      this.wetFoodAmount = 0;
+      this.wetFoodShownAmount = 0;
+      this.wetFoodMaxAmount = 0;
       this.shouldDisplayDietWetLink = false;
     }
   }
 
-  isFoodFormInvalid() {
-    return !(
-      (!!this.caloriesInputted || !!this.caloriesNumCalculated)
-      && !!this.brand
-      && ((this.dietDry !== this.noDietOption || this.dietWet !== this.noDietOption))
-    )
-  }
-
   shouldDisplayWetDesiredAmount() {
-    return (this.dietDry !== this.noDietOption) && (this.dietWet !== this.noDietOption)
+    return (this.dietDry && this.dietDry !== this.noDietOption) && (this.dietWet && this.dietWet !== this.noDietOption)
   }
 
   getDryFoodMaxAmount() {
@@ -246,14 +230,14 @@ export class SectionFoodComponent implements OnInit {
     return (
       !!this.pet &&
       !!(this.caloriesInputted || this.caloriesNumCalculated) &&
-      ( (this.dietDry !== this.noDietOption || this.dietWet !== this.noDietOption) ||
-      (this.dietDry !== this.noDietOption && this.dietWet !== this.noDietOption && !isNaN(this.wetFoodAmount)) )
+      ( (this.dietDry && this.dietDry !== this.noDietOption || this.dietWet && this.dietWet !== this.noDietOption) ||
+      (this.dietDry && this.dietWet && this.dietDry !== this.noDietOption && this.dietWet !== this.noDietOption && !isNaN(this.wetFoodAmount)) )
     )
   }
 
   onFoodFormSubmit() {
     this.getDesiredDryFoodAmount();
     this.isFoodCalculated = true;
-    this.wetFoodShownAmount = this.dryFoodAmount ? this.wetFoodAmount : this.wetFoodMaxAmount;
+    this.wetFoodShownAmount = this.shouldDisplayWetDesiredAmount() ? this.wetFoodAmount : this.wetFoodMaxAmount;
   }
 }

@@ -1,0 +1,25 @@
+<button class="btn mat-flat-button credits" (click)="isOpen = !isOpen" cdkOverlayOrigin #trigger="cdkOverlayOrigin">
+  Credits
+</button>
+<ng-template
+  cdkConnectedOverlay
+  cdkConnectedOverlayBackdropClass="cdk-overlay-transparent-backdrop"
+  [cdkConnectedOverlayPositions]="positionPairs"
+  [cdkConnectedOverlayOrigin]="trigger"
+  [cdkConnectedOverlayOpen]="isOpen"
+  [cdkConnectedOverlayHasBackdrop]="true"
+  (detach)="isOpen = false"
+  (backdropClick)="isOpen = false"
+>
+  <div class="credits-overlay" cdkTrapFocus [cdkTrapFocusAutoCapture]="true">
+    Created by:
+    <mat-divider></mat-divider>
+    <div class="contributors">
+      <br>
+      ◦ <span class="contributor">Darija Lauš:</span> Inspiration, scientific support
+      <br>
+      <br>
+      ◦ <span class="contributor">Aleksandra Tsvetkova:</span> Development
+    </div>
+  </div>
+</ng-template>

@@ -1,0 +1,35 @@
+.credits {
+  /*margin-right: 5%;*/
+  border: none;
+  background-color: #5c6bc0;
+  color: white;
+  font-weight: lighter;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.credits:hover {background: #3949ab;}
+
+.credits-overlay {
+  width: 100%;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  background: #fff;
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  padding: 10px;
+  margin: 0;
+}
+
+.contributors {
+  text-align: left;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.contributor {
+  font-size: 15px;
+  font-weight: normal;
+}

@@ -3,12 +3,15 @@
     <mat-label>
       {{title}}
     </mat-label>
-    <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto">
+    <input type="text" matInput [formControl]="myControl" [matAutocomplete]="auto" [(ngModel)]="diet">
     <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onSelectionChange($event)">
       <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
         {{option}}
       </mat-option>
     </mat-autocomplete>
+    <button type="button" mat-button *ngIf="diet" matSuffix mat-icon-button aria-label="Clear" (click)="resetDiet()">
+      <mat-icon>close</mat-icon>
+    </button>
     <mat-hint align="end" *ngIf="shouldDisplayLink">
       <a class="diet-link" href="{{dietLink}}" target="_blank">More info on {{diet}}
       </a>

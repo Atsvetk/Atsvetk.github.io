@@ -1,9 +1,22 @@
 import {Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-section-calories',
   templateUrl: './section-calories.component.html',
-  styleUrls: ['./section-calories.component.css']
+  styleUrls: ['./section-calories.component.css'],
+  animations: [
+    trigger('flipState', [
+      state('active', style({
+        transform: 'rotateY(179deg)'
+      })),
+      state('inactive', style({
+        transform: 'rotateY(0)'
+      })),
+      transition('active => inactive', animate('600ms ease-out')),
+      transition('inactive => active', animate('600ms ease-out'))
+    ])
+  ]
 })
 
 export class SectionCaloriesComponent implements OnInit {
@@ -73,5 +86,9 @@ export class SectionCaloriesComponent implements OnInit {
     }
     return Math.round(calories);
   }
+  flip: string = 'inactive';
 
+  toggleFlip() {
+    this.flip = (this.flip == 'inactive') ? 'active' : 'inactive';
+  }
 }
