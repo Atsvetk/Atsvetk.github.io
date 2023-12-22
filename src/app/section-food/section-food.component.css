@@ -1,0 +1,49 @@
+
+.mat-card-title {
+  font-size: 26px;
+}
+
+::ng-deep .mat-form-field-flex > .mat-form-field-infix {
+  padding: 0.1em 0 0.6em 0 !important;
+}
+
+mat-form-field {
+  font-size: 17px;
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+  top: -1.5em;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  transform: translateY(-1.1em) scale(.75);
+  width: 133.33333%;
+}
+
+mat-option {
+  text-align: end;
+}
+
+.calories-per-day::-webkit-outer-spin-button,
+.calories-per-day::-webkit-inner-spin-button
+.wet-food-amount::-webkit-outer-spin-button,
+.wet-food-amount::-webkit-inner-spin-button {
+  display: none;
+}
+
+.calories-per-day, .wet-food-amount {
+  text-align: right;
+  -moz-appearance: textfield;
+}
+
+::ng-deep .mat-form-field-suffix {
+  margin-left: 7px;
+  align-self: center;
+}
+
+.food-results {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: start;
+}

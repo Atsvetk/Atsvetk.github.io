@@ -1,0 +1,124 @@
+.tp-wrapper {
+    -webkit-perspective: 2500px;
+            perspective: 2500px;
+  }
+.tp-box {
+  position: relative;
+  width: 432px;
+  height: 658px;
+  /*padding: 16px;*/
+  /*margin: 3rem auto;*/
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform         : transform 2s;
+  -ms-transform         : transform 2s;
+  transform         : transform 2s;
+}
+.tp-box__side {
+  width: 400px;
+  height: 626px;
+  position: absolute;
+  /*top: 16px;*/
+  /*left: 16px;*/
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  /*color: #fff;*/
+  /*text-align: center;*/
+  /*line-height: 100px;*/
+  /*font-size: 24px;*/
+  /*font-weight: 700;*/
+  /*cursor: pointer;*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /*user-select: none;*/
+}
+.tp-box__front {
+  /*background: green;*/
+  -webkit-transform : rotateY(0deg);
+  -ms-transform     : rotateY(0deg);
+  transform         : rotateY(0deg);
+}
+.tp-box__back {
+  /*background: #23262d;*/
+  -webkit-transform : rotateY(-180deg);
+  -ms-transform     : rotateY(-180deg);
+  transform         : rotateY(-180deg);
+}
+
+.tp-box__back h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.tp-box__back h3 {
+  margin: 0 0 3px;
+  font-size: 15px;
+}
+
+.tp-box__back p {
+  font-size: 12px;
+}
+
+.mat-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mat-card-title {
+  font-size: 26px;
+}
+
+.flip-button {
+  align-self: flex-end;
+}
+
+::ng-deep .mat-form-field-flex > .mat-form-field-infix {
+  padding: 0.1em 0 0.6em 0 !important;
+}
+
+mat-form-field {
+  font-size: 17px;
+}
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+
+  margin: 0 0 0 0
+}
+
+::ng-deep .mat-form-field-label-wrapper {
+  top: -1.5em;
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float .mat-form-field-label {
+  transform: translateY(-1.1em) scale(.75);
+  width: 133.33333%;
+}
+
+mat-option {
+  text-align: end;
+}
+
+.current-weight::-webkit-outer-spin-button,
+.current-weight::-webkit-inner-spin-button {
+  display: none;
+}
+
+.current-weight {
+  text-align: right;
+  padding-top: 2px;
+  -moz-appearance: textfield;
+}
+
+::ng-deep .mat-form-field-suffix {
+  margin-left: 7px;
+  align-self: center;
+}
+
+.calories-results {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: start;
+}

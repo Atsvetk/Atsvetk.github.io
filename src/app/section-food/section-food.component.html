@@ -1,0 +1,78 @@
+<mat-card class="raised mat-elevation-z10">
+  <div class="mat-card-header">
+    <div class="mat-card-title">
+      Food
+    </div>
+  </div>
+  <div class="section-form">
+    <div class="section-fields-container">
+      <mat-form-field appearance="outline">
+        <mat-label>
+          Calories per day
+        </mat-label>
+        <input [disabled]="shouldBeDisabled" matInput class="calories-per-day" type="number" min="0" id="caloriesPerDay" placeholder="0" value="{{caloriesNumCalculated}}" (change)="onCaloriesInputUpdate($event)">
+        <mat-error align="end">
+          Value should be greater than 0
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label for="brand">
+          Brand
+        </mat-label>
+        <mat-select [disabled]="shouldBeDisabled" class="brand" id="brand" [(ngModel)]="brand" (selectionChange)="onBrandUpdate($event)">
+          <mat-option *ngFor="let option of brandOptions" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <app-diet-autocomplete
+        [shouldBeDisabled]="shouldBeDisabled"
+        [brandSelected]="brand"
+        (dietSelected)="onDietDryUpdate($event)"
+        [title]="'Diet for dry food'"
+        [options]="dietDryOptions"
+        [shouldDisplayLink]="shouldDisplayDietDryLink"
+        [dietLink]="dietDryInfo?.link"
+      ></app-diet-autocomplete>
+      <app-diet-autocomplete
+        [shouldBeDisabled]="shouldBeDisabled"
+        [brandSelected]="brand"
+        (dietSelected)="onDietWetUpdate($event)"
+        [title]="'Diet for wet food'"
+        [options]="dietWetOptions"
+        [shouldDisplayLink]="shouldDisplayDietWetLink"
+        [dietLink]="dietWetInfo?.link"
+      ></app-diet-autocomplete>
+      <mat-form-field appearance="outline" *ngIf="shouldDisplayWetDesiredAmount()">
+        <mat-label>
+          Desired amount of wet food
+        </mat-label>
+        <input matInput class="wet-food-amount" type="number" min="0" max="{{wetFoodMaxAmount}}" placeholder="0" [(ngModel)]="wetFoodAmount" (change)="onDesiredWetFoodAmountChange($event)">
+        <span matSuffix>   g</span>
+        <mat-hint align="end">
+          The value should be between 0 and {{wetFoodMaxAmount}}
+        </mat-hint>
+        <mat-error align="end">
+          The value should be between 0 and {{wetFoodMaxAmount}}
+        </mat-error>
+      </mat-form-field>
+    </div>
+    <div class="section-button-group">
+      <button (click)="onFoodFormSubmit()" mat-raised-button color="primary" [disabled]="!isFoodFormValid()">
+        Calculate food
+      </button>
+    </div>
+  </div>
+  <div class="section-results food-results">
+    <p *ngIf="isFoodCalculated && dietDry && dietDry !== noDietOption">
+      {{brand}} {{dietDry}}:
+      <strong>{{dryFoodAmount}}</strong>
+      g
+    </p>
+    <p *ngIf="isFoodCalculated && dietWet && dietWet !== noDietOption">
+      {{brand}} {{dietWet}}:
+      <strong>{{wetFoodShownAmount}}</strong>
+      g
+    </p>
+  </div>
+</mat-card>
