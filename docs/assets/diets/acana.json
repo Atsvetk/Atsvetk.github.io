@@ -1,0 +1,274 @@
+{
+  "kitten": [
+    {
+      "diet": "First Feast",
+      "type": "dry",
+      "calories": 3850,
+      "link": "https://emea.acana.com/en/cats/cat-food/first-feast/eu-aca-first-feast-cat.html"
+    },
+    {
+      "diet": "Pacifica",
+      "type": "dry",
+      "calories": 3930,
+      "link": "https://emea.acana.com/en/cats/cat-food/pacifica/eu-aca-pacifica-new-cat.html"
+    },
+    {
+      "diet": "Grasslands",
+      "type": "dry",
+      "calories": 3930,
+      "link": "https://emea.acana.com/en/cats/cat-food/grasslands/eu-aca-grasslands-new-cat.html"
+    },
+    {
+      "diet": "Wild Prairie",
+      "type": "dry",
+      "calories": 3930,
+      "link": "https://emea.acana.com/en/cats/cat-food/wild-prairie/eu-aca-wild-prairie-new-cat.html"
+    },
+    {
+      "diet": "ACANA Premium Pâté, Kitten Recipe",
+      "type": "wet",
+      "calories": 1342,
+      "link": "https://emea.acana.com/en/cats/cat-food/acana-premium-p%C3%A2t%C3%A9%2C-kitten-recipe%C2%A0-%C2%A0/eu-premium-pate-kitten-recipe.html"
+    }
+  ],
+  "cat": [
+    {
+      "diet": "Indoor Entrée",
+      "type": "dry",
+      "calories": 3630,
+      "link": "https://emea.acana.com/en/cats/cat-food/indoor-entr%C3%A9e/eu-aca-indoor-entree-cat.html"
+    },
+    {
+      "diet": "Homestead Harvest",
+      "type": "dry",
+      "calories": 3760,
+      "link": "https://emea.acana.com/en/cats/cat-food/homestead-harvest/eu-aca-homestead-cat.html"
+    },
+    {
+      "diet": "Bountiful Catch",
+      "type": "dry",
+      "calories": 3800,
+      "link": "https://emea.acana.com/en/cats/cat-food/bountiful-catch/eu-aca-bountiful-catch-cat.html"
+    },
+    {
+      "diet": "Pacifica",
+      "type": "dry",
+      "calories": 3930,
+      "link": "https://emea.acana.com/en/cats/cat-food/pacifica/eu-aca-pacifica-new-cat.html"
+    },
+    {
+      "diet": "Grasslands",
+      "type": "dry",
+      "calories": 3930,
+      "link": "https://emea.acana.com/en/cats/cat-food/grasslands/eu-aca-grasslands-new-cat.html"
+    },
+    {
+      "diet": "Wild Prairie",
+      "type": "dry",
+      "calories": 3930,
+      "link": "https://emea.acana.com/en/cats/cat-food/wild-prairie/eu-aca-wild-prairie-new-cat.html"
+    },
+    {
+      "diet": "ACANA Premium Pâté, Tuna Recipe",
+      "type": "wet",
+      "calories": 1208,
+      "link": "https://emea.acana.com/en/cats/cat-food/acana-premium-p%C3%A2t%C3%A9%2C-tuna-recipe%C2%A0-%C2%A0/eu-premium-pate-cat-tuna-recipe.html"
+    },
+    {
+      "diet": "ACANA Premium Pâté, Lamb Recipe",
+      "type": "wet",
+      "calories": 1113,
+      "link": "https://emea.acana.com/en/cats/cat-food/acana-premium-p%C3%A2t%C3%A9%2C-lamb-recipe/eu-premium-pate-cat-lamb-recipe.html"
+    },
+    {
+      "diet": "ACANA Premium Pâté, Salmon Recipe",
+      "type": "wet",
+      "calories": 1187,
+      "link": "https://emea.acana.com/en/cats/cat-food/acana-premium-p%C3%A2t%C3%A9%2C-salmon-recipe%C2%A0-%C2%A0/eu-premium-pate-cat-salmon-recipe%C2%A0.html"
+    },
+    {
+      "diet": "ACANA Premium Pâté, Beef Recipe",
+      "type": "wet",
+      "calories": 1267,
+      "link": "https://emea.acana.com/en/cats/cat-food/acana-premium-p%C3%A2t%C3%A9%2C-beef-recipe%C2%A0-%C2%A0/eu-premium-pate-cat-beef-recipe%C2%A0.html"
+    },
+    {
+      "diet": "ACANA Premium Pâté, Chicken Recipe",
+      "type": "wet",
+      "calories": 1424,
+      "link": "https://emea.acana.com/en/cats/cat-food/acana-premium-p%C3%A2t%C3%A9%2C-chicken-recipe/eu-premium-pate-cat-chicken-recipe.html"
+    }
+  ],
+  "puppy": [
+    {
+      "diet": "Puppy Recipe",
+      "type": "dry",
+      "calories": 3660,
+      "link": "https://emea.acana.com/en/dogs/dog-food/puppy-recipe/eu-aca-puppy-junior.html"
+    },
+    {
+      "diet": "Puppy Small Breed Recipe",
+      "type": "dry",
+      "calories": 3660,
+      "link": "https://emea.acana.com/en/dogs/dog-food/puppy-small-breed-recipe/eu-aca-puppy-small.html"
+    },
+    {
+      "diet": "Puppy Large Breed Recipe",
+      "type": "dry",
+      "calories": 3375,
+      "link": "https://emea.acana.com/en/dogs/dog-food/puppy-large-breed-recipe/eu-aca-puppy-large.html"
+    },
+    {
+      "diet": "Free-Run Duck",
+      "type": "dry",
+      "calories": 3393,
+      "link": "https://emea.acana.com/en/dogs/dog-food/free-run-duck/eu-aca-singles-duck-new.html"
+    },
+    {
+      "diet": "Yorkshire Pork",
+      "type": "dry",
+      "calories": 3393,
+      "link": "https://emea.acana.com/en/dogs/dog-food/yorkshire-pork/eu-aca-singles-pork-new.html"
+    },
+    {
+      "diet": "Grass-fed Lamb",
+      "type": "dry",
+      "calories": 3393,
+      "link": "https://emea.acana.com/en/dogs/dog-food/grass-fed-lamb/eu-aca-singles-lamb-new.html"
+    },
+    {
+      "diet": "Classics Wild Coast",
+      "type": "dry",
+      "calories": 3493,
+      "link": "https://emea.acana.com/en/dogs/dog-food/classics-wild-coast/eu-aca-wildcoast.html"
+    },
+    {
+      "diet": "Classics Prairie Poultry",
+      "type": "dry",
+      "calories": 3493,
+      "link": "https://emea.acana.com/en/dogs/dog-food/classics-prairie-poultry/eu-aca-prairiepoultry.html"
+    },
+    {
+      "diet": "Classics Red Meat",
+      "type": "dry",
+      "calories": 3493,
+      "link": "https://emea.acana.com/en/dogs/dog-food/classics-red-meat/eu-aca-classicred.html"
+    },
+    {
+      "diet": "Ranchlands",
+      "type": "dry",
+      "calories": 3790,
+      "link": "https://emea.acana.com/en/dogs/dog-food/ranchlands/eu-aca-ranchlands.html"
+    },
+    {
+      "diet": "Wild Prairie",
+      "type": "dry",
+      "calories": 3850,
+      "link": "https://emea.acana.com/en/dogs/dog-food/wild-prairie/eu-aca-wild-prairie.html"
+    },
+    {
+      "diet": "Pacifica",
+      "type": "dry",
+      "calories": 3850,
+      "link": "https://emea.acana.com/en/dogs/dog-food/pacifica/eu-aca-pacifica.html"
+    }
+  ],
+  "dog": [
+    {
+      "diet": "Adult Dog Recipe",
+      "type": "dry",
+      "calories": 3510,
+      "link": "https://emea.acana.com/en/dogs/dog-food/adult-dog-recipe/eu-aca-adult.html"
+    },
+    {
+      "diet": "Adult Small Breed Recipe",
+      "type": "dry",
+      "calories": 3510,
+      "link": "https://emea.acana.com/en/dogs/dog-food/adult-small-breed-recipe/eu-aca-adult-small.html"
+    },
+    {
+      "diet": "Adult Large Breed Recipe",
+      "type": "dry",
+      "calories": 3375,
+      "link": "https://emea.acana.com/en/dogs/dog-food/adult-large-breed-recipe/eu-aca-adult-large.html"
+    },
+    {
+      "diet": "Senior Recipe",
+      "type": "dry",
+      "calories": 3325,
+      "link": "https://emea.acana.com/en/dogs/dog-food/senior-recipe/eu-aca-senior.html"
+    },
+    {
+      "diet": "Light & Fit Recipe",
+      "type": "dry",
+      "calories": 3070,
+      "link": "https://emea.acana.com/en/dogs/dog-food/light-and-fit-recipe/eu-aca-light-fit.html"
+    },
+    {
+      "diet": "Sport & Agility Recipe",
+      "type": "dry",
+      "calories": 3725,
+      "link": "https://emea.acana.com/en/dogs/dog-food/sport-and-agility-recipe/eu-aca-sport-agility.html"
+    },
+    {
+      "diet": "Free-Run Duck",
+      "type": "dry",
+      "calories": 3393,
+      "link": "https://emea.acana.com/en/dogs/dog-food/free-run-duck/eu-aca-singles-duck-new.html"
+    },
+    {
+      "diet": "Yorkshire Pork",
+      "type": "dry",
+      "calories": 3393,
+      "link": "https://emea.acana.com/en/dogs/dog-food/yorkshire-pork/eu-aca-singles-pork-new.html"
+    },
+    {
+      "diet": "Grass-fed Lamb",
+      "type": "dry",
+      "calories": 3393,
+      "link": "https://emea.acana.com/en/dogs/dog-food/grass-fed-lamb/eu-aca-singles-lamb-new.html"
+    },
+    {
+      "diet": "Classics Wild Coast",
+      "type": "dry",
+      "calories": 3493,
+      "link": "https://emea.acana.com/en/dogs/dog-food/classics-wild-coast/eu-aca-wildcoast.html"
+    },
+    {
+      "diet": "Classics Prairie Poultry",
+      "type": "dry",
+      "calories": 3493,
+      "link": "https://emea.acana.com/en/dogs/dog-food/classics-prairie-poultry/eu-aca-prairiepoultry.html"
+    },
+    {
+      "diet": "Classics Red Meat",
+      "type": "dry",
+      "calories": 3493,
+      "link": "https://emea.acana.com/en/dogs/dog-food/classics-red-meat/eu-aca-classicred.html"
+    },
+    {
+      "diet": "Ranchlands",
+      "type": "dry",
+      "calories": 3790,
+      "link": "https://emea.acana.com/en/dogs/dog-food/ranchlands/eu-aca-ranchlands.html"
+    },
+    {
+      "diet": "Wild Prairie",
+      "type": "dry",
+      "calories": 3850,
+      "link": "https://emea.acana.com/en/dogs/dog-food/wild-prairie/eu-aca-wild-prairie.html"
+    },
+    {
+      "diet": "Pacifica",
+      "type": "dry",
+      "calories": 3850,
+      "link": "https://emea.acana.com/en/dogs/dog-food/pacifica/eu-aca-pacifica.html"
+    },
+    {
+      "diet": "Grasslands",
+      "type": "dry",
+      "calories": 3810,
+      "link": "https://emea.acana.com/en/dogs/dog-food/grasslands/eu-aca-grasslands.html"
+    }
+  ]
+}
