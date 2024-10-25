@@ -10,7 +10,7 @@
         <mat-label>
           Calories per day
         </mat-label>
-        <input [disabled]="shouldBeDisabled" matInput class="calories-per-day" type="number" min="0" id="caloriesPerDay" placeholder="0" value="{{caloriesNumCalculated}}" (change)="onCaloriesInputUpdate($event)">
+        <input [disabled]="shouldBeDisabled" matInput readonly class="calories-per-day" type="number" min="0" id="caloriesPerDay" placeholder="0" value="{{caloriesNumCalculated}}" (change)="onCaloriesInputUpdate($event)">
         <mat-error align="end">
           Value should be greater than 0
         </mat-error>
@@ -31,7 +31,6 @@
         (dietSelected)="onDietDryUpdate($event)"
         [title]="'Diet for dry food'"
         [options]="dietDryOptions"
-        [shouldDisplayLink]="shouldDisplayDietDryLink"
         [dietLink]="dietDryInfo?.link"
       ></app-diet-autocomplete>
       <app-diet-autocomplete
@@ -43,14 +42,14 @@
         [shouldDisplayLink]="shouldDisplayDietWetLink"
         [dietLink]="dietWetInfo?.link"
       ></app-diet-autocomplete>
-      <mat-form-field appearance="outline" *ngIf="shouldDisplayWetDesiredAmount()">
+      <mat-form-field appearance="outline">
         <mat-label>
           Desired amount of wet food
         </mat-label>
         <input matInput class="wet-food-amount" type="number" min="0" max="{{wetFoodMaxAmount}}" placeholder="0" [(ngModel)]="wetFoodAmount" (change)="onDesiredWetFoodAmountChange($event)">
         <span matSuffix>   g</span>
         <mat-hint align="end">
-          The value should be between 0 and {{wetFoodMaxAmount}}
+          The value should be between 0 and
         </mat-hint>
         <mat-error align="end">
           The value should be between 0 and {{wetFoodMaxAmount}}
@@ -58,7 +57,7 @@
       </mat-form-field>
     </div>
     <div class="section-button-group">
-      <button (click)="onFoodFormSubmit()" mat-raised-button color="primary" [disabled]="!isFoodFormValid()">
+      <button (click)="onFoodFormSubmit()" mat-raised-button color="primary" [disabled]="!isFoodFormValid()" style="font-family: Century">
         Calculate food
       </button>
     </div>
