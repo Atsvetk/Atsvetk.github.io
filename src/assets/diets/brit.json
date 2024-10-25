@@ -1,0 +1,358 @@
+{
+  "kitten": [
+    {
+      "diet": "Premium by Nature Cat Kitten Chicken",
+      "type": "dry",
+      "calories": 3930,
+      "link": "https://brit-petfood.com/en/products/cats/773353-brit-premium-by-nature-cat-kitten-chicken"
+    }
+  ],
+  "puppy": [
+    {
+      "diet": "Fresh Chicken with Potato Puppy Healthy Growth",
+      "type": "dry",
+      "calories": 4080,
+      "link": "https://brit-petfood.com/en/products/dogs/275810-brit-fresh-chicken-with-potato-puppy-healthy-growth"
+    },
+    {
+      "diet": "Fresh Beef with Pumpkin Puppy Large Bones & Joints",
+      "type": "dry",
+      "calories": 3750,
+      "link": "https://brit-petfood.com/en/products/dogs/275700-brit-fresh-beef-with-pumpkin-puppy-large-bones-and-joints"
+    },
+    {
+      "diet": "Premium by Nature Junior M",
+      "type": "dry",
+      "calories": 3980,
+      "link": "https://brit-petfood.com/en/products/dogs/264808-brit-premium-by-nature-junior-m"
+    },
+    {
+      "diet": "Premium by Nature Junior L",
+      "type": "dry",
+      "calories": 3850,
+      "link": "https://brit-petfood.com/en/products/dogs/264811-brit-premium-by-nature-junior-l"
+    },
+    {
+      "diet": "Premium by Nature Junior XL",
+      "type": "dry",
+      "calories": 3860,
+      "link": "https://brit-petfood.com/en/products/dogs/264893-brit-premium-by-nature-junior-xl"
+    },
+    {
+      "diet": "Premium by Nature Junior S",
+      "type": "dry",
+      "calories": 4050,
+      "link": "https://brit-petfood.com/en/products/dogs/264806-brit-premium-by-nature-junior-s"
+    },
+    {
+      "diet": "Paté & Meat - Puppy",
+      "type": "wet",
+      "calories": 1099,
+      "link": "https://brit-petfood.com/en/products/dogs/266121-brit-pate-and-meat-puppy"
+    }
+  ],
+  "cat": [
+    {
+      "diet": "Premium by Nature Cat Adult Chicken",
+      "type": "dry",
+      "calories": 3800,
+      "link": "https://brit-petfood.com/en/products/cats/773362-brit-premium-by-nature-cat-adult-chicken"
+    },
+    {
+      "diet": "Premium by Nature Cat Adult Salmon",
+      "type": "dry",
+      "calories": 3840,
+      "link": "https://brit-petfood.com/en/products/cats/773364-brit-premium-by-nature-cat-adult-salmon"
+    },
+    {
+      "diet": "Premium by Nature Cat Indoor Chicken",
+      "type": "dry",
+      "calories": 3930,
+      "link": "https://brit-petfood.com/en/products/cats/773365-brit-premium-by-nature-cat-indoor-chicken"
+    },
+    {
+      "diet": "Premium by Nature Cat Sensitive Lamb",
+      "type": "dry",
+      "calories": 3870,
+      "link": "https://brit-petfood.com/en/products/cats/773368-brit-premium-by-nature-cat-sensitive-lamb"
+    },
+    {
+      "diet": "Premium by Nature Cat Sterilized Chicken",
+      "type": "dry",
+      "calories": 3720,
+      "link": "https://brit-petfood.com/en/products/cats/773370-brit-premium-by-nature-cat-sterilized-chicken"
+    },
+    {
+      "diet": "Premium by Nature Cat Sterilized Lamb",
+      "type": "dry",
+      "calories": 3720,
+      "link": "https://brit-petfood.com/en/products/cats/773372-brit-premium-by-nature-cat-sterilized-lamb"
+    },
+    {
+      "diet": "Premium by Nature Cat Sterilized Salmon",
+      "type": "dry",
+      "calories": 3940,
+      "link": "https://brit-petfood.com/en/products/cats/773374-brit-premium-by-nature-cat-sterilized-salmon"
+    },
+    {
+      "diet": "Premium by Nature Chicken with Hearts",
+      "type": "wet",
+      "calories": 930,
+      "link": "https://brit-petfood.com/en/products/cats/439826-brit-premium-by-nature-chicken-with-hearts"
+    },
+    {
+      "diet": "Premium by Nature Chicken with Rice",
+      "type": "wet",
+      "calories": 979,
+      "link": "https://brit-petfood.com/en/products/cats/439829-brit-premium-by-nature-chicken-with-rice"
+    },
+    {
+      "diet": "Premium by Nature Trout with Liver",
+      "type": "wet",
+      "calories": 942,
+      "link": "https://brit-petfood.com/en/products/cats/439827-brit-premium-by-nature-trout-with-liver"
+    },
+    {
+      "diet": "Premium by Nature Turkey with Liver",
+      "type": "wet",
+      "calories": 1020,
+      "link": "https://brit-petfood.com/en/products/cats/439830-brit-premium-by-nature-turkey-with-liver"
+    },
+    {
+      "diet": "Premium by Nature Chicken with Beef",
+      "type": "wet",
+      "calories": 910,
+      "link": "https://brit-petfood.com/en/products/cats/439825-brit-premium-by-nature-chicken-with-beef"
+    },
+    {
+      "diet": "Premium by Nature Turkey with Lamb",
+      "type": "wet",
+      "calories": 1010,
+      "link": "https://brit-petfood.com/en/products/cats/439828-brit-premium-by-nature-turkey-with-lamb"
+    }
+  ],
+  "dog": [
+    {
+      "diet": "Fresh Chicken with Potato Adult Great Life",
+      "type": "dry",
+      "calories": 3810,
+      "link": "https://brit-petfood.com/en/products/dogs/275657-brit-fresh-chicken-with-potato-adult-great-life"
+    },
+    {
+      "diet": "Fresh Beef with Pumpkin Puppy Large Bones & Joints",
+      "type": "dry",
+      "calories": 3750,
+      "link": "https://brit-petfood.com/en/products/dogs/275700-brit-fresh-beef-with-pumpkin-puppy-large-bones-and-joints"
+    },
+    {
+      "diet": "Fresh Fish with Pumpkin Adult Large Muscles & Joints",
+      "type": "dry",
+      "calories": 3690,
+      "link": "https://brit-petfood.com/en/products/dogs/275640-brit-fresh-fish-with-pumpkin-adult-large-muscles-and-joints"
+    },
+    {
+      "diet": "Fresh Turkey with Pea Adult Fit & Slim",
+      "type": "dry",
+      "calories": 3460,
+      "link": "https://brit-petfood.com/en/products/dogs/275658-brit-fresh-turkey-with-pea-adult-fit-and-slim"
+    },
+    {
+      "diet": "Fresh Duck with Millet Adult Run & Work",
+      "type": "dry",
+      "calories": 4200,
+      "link": "https://brit-petfood.com/en/products/dogs/275783-brit-fresh-duck-with-millet-adult-run-and-work"
+    },
+    {
+      "diet": "Fresh Fish with Pumpkin",
+      "type": "wet",
+      "calories": 1075,
+      "link": "https://brit-petfood.com/en/products/dogs/283928-brit-fresh-fish-with-pumpkin"
+    },
+    {
+      "diet": "Premium by Nature Turkey with Liver",
+      "type": "wet",
+      "calories": 1010,
+      "link": "https://brit-petfood.com/en/products/dogs/330418-brit-premium-by-nature-turkey-with-liver"
+    },
+    {
+      "diet": "Premium by Nature Lamb with Buckwheat",
+      "type": "wet",
+      "calories": 1000,
+      "link": "https://brit-petfood.com/en/products/dogs/330412-brit-premium-by-nature-lamb-with-buckwheat"
+    },
+    {
+      "diet": "Premium by Nature Beef with Tripe",
+      "type": "wet",
+      "calories": 1065,
+      "link": "https://brit-petfood.com/en/products/dogs/330398-brit-premium-by-nature-beef-with-tripe"
+    },
+    {
+      "diet": "Premium by Nature Chicken with Hearts",
+      "type": "wet",
+      "calories": 1030,
+      "link": "https://brit-petfood.com/en/products/dogs/330409-brit-premium-by-nature-chicken-with-hearts"
+    },
+    {
+      "diet": "Premium by Nature Pork with Trachea",
+      "type": "wet",
+      "calories": 1020,
+      "link": "https://brit-petfood.com/en/products/dogs/330415-brit-premium-by-nature-pork-with-trachea"
+    },
+    {
+      "diet": "Premium by Nature Fish with Fish Skin",
+      "type": "wet",
+      "calories": 1000,
+      "link": "https://brit-petfood.com/en/products/dogs/330406-brit-premium-by-nature-fish-with-fish-skin"
+    },
+    {
+      "diet": "Premium by Nature Adult M",
+      "type": "dry",
+      "calories": 3790,
+      "link": "https://brit-petfood.com/en/products/dogs/264809-brit-premium-by-nature-adult-m"
+    },
+    {
+      "diet": "Premium by Nature Adult L",
+      "type": "dry",
+      "calories": 3770,
+      "link": "https://brit-petfood.com/en/products/dogs/264812-brit-premium-by-nature-adult-l"
+    },
+    {
+      "diet": "Premium by Nature Adult S",
+      "type": "dry",
+      "calories": 3820,
+      "link": "https://brit-petfood.com/en/products/dogs/264807-brit-premium-by-nature-adult-s"
+    },
+    {
+      "diet": "Premium by Nature Senior S+M",
+      "type": "dry",
+      "calories": 3620,
+      "link": "https://brit-petfood.com/en/products/dogs/264810-brit-premium-by-nature-senior-s-m"
+    },
+    {
+      "diet": "Premium by Nature Adult XL",
+      "type": "dry",
+      "calories": 3770,
+      "link": "https://brit-petfood.com/en/products/dogs/264847-brit-premium-by-nature-adult-xl"
+    },
+    {
+      "diet": "Premium by Nature Senior L+XL",
+      "type": "dry",
+      "calories": 3770,
+      "link": "https://brit-petfood.com/en/products/dogs/264819-brit-premium-by-nature-senior-l-xl"
+    },
+    {
+      "diet": "Premium by Nature Sensitive Lamb",
+      "type": "dry",
+      "calories": 3660,
+      "link": "https://brit-petfood.com/en/products/dogs/264851-brit-premium-by-nature-sensitive-lamb"
+    },
+    {
+      "diet": "Premium by Nature Light",
+      "type": "dry",
+      "calories": 3180,
+      "link": "https://brit-petfood.com/en/products/dogs/264848-brit-premium-by-nature-light"
+    },
+    {
+      "diet": "Premium by Nature Sport",
+      "type": "dry",
+      "calories": 4200,
+      "link": "https://brit-petfood.com/en/products/dogs/264897-brit-premium-by-nature-sport"
+    },
+    {
+      "diet": "Premium by Nature Junior S",
+      "type": "dry",
+      "calories": 4050,
+      "link": "https://brit-petfood.com/en/products/dogs/264806-brit-premium-by-nature-junior-s"
+    },
+    {
+      "diet": "Paté & Meat - Turkey",
+      "type": "wet",
+      "calories": 981,
+      "link": "https://brit-petfood.com/en/products/dogs/266119-brit-pate-and-meat-turkey"
+    },
+    {
+      "diet": "Paté & Meat - Salmon",
+      "type": "wet",
+      "calories": 1054,
+      "link": "https://brit-petfood.com/en/products/dogs/266118-brit-pate-and-meat-salmon"
+    },
+    {
+      "diet": "Paté & Meat - Lamb",
+      "type": "wet",
+      "calories": 1025,
+      "link": "https://brit-petfood.com/en/products/dogs/266109-brit-pate-and-meat-lamb"
+    },
+    {
+      "diet": "Paté & Meat - Chicken",
+      "type": "wet",
+      "calories": 959,
+      "link": "https://brit-petfood.com/en/products/dogs/266091-brit-pate-and-meat-chicken"
+    },
+    {
+      "diet": "Paté & Meat - Duck",
+      "type": "wet",
+      "calories": 1029,
+      "link": "https://brit-petfood.com/en/products/dogs/266085-brit-pate-and-meat-duck"
+    },
+    {
+      "diet": "Paté & Meat - Beef",
+      "type": "wet",
+      "calories": 1143,
+      "link": "https://brit-petfood.com/en/products/dogs/266083-brit-pate-and-meat-beef"
+    },
+    {
+      "diet": "Paté & Meat - Rabbit",
+      "type": "wet",
+      "calories": 910,
+      "link": "https://brit-petfood.com/en/products/dogs/266117-brit-pate-and-meat-rabbit"
+    },
+    {
+      "diet": "Paté & Meat - Venison",
+      "type": "wet",
+      "calories": 1054,
+      "link": "https://brit-petfood.com/en/products/dogs/266120-brit-pate-and-meat-venison"
+    },
+    {
+      "diet": "Mono Protein – Turkey",
+      "type": "wet",
+      "calories": 1260,
+      "link": "https://brit-petfood.com/en/products/dogs/266151-brit-mono-protein-turkey"
+    },
+    {
+      "diet": "Mono Protein – Rabbit",
+      "type": "wet",
+      "calories": 1070,
+      "link": "https://brit-petfood.com/en/products/dogs/266152-brit-mono-protein-rabbit"
+    },
+    {
+      "diet": "Mono Protein – Beef",
+      "type": "wet",
+      "calories": 1310,
+      "link": "https://brit-petfood.com/en/products/dogs/266162-brit-mono-protein-beef"
+    },
+    {
+      "diet": "Mono Protein Turkey & Sweet Potato",
+      "type": "wet",
+      "calories": 1250,
+      "link": "https://brit-petfood.com/en/products/dogs/266165-brit-mono-protein-turkey-and-sweet-potato"
+    },
+    {
+      "diet": "Mono Protein Lamb & Rice",
+      "type": "wet",
+      "calories": 1110,
+      "link": "https://brit-petfood.com/en/products/dogs/266166-brit-mono-protein-lamb-and-rice"
+    },
+    {
+      "diet": "Mono Protein Tuna & Sweet Potato",
+      "type": "wet",
+      "calories": 1110,
+      "link": "https://brit-petfood.com/en/products/dogs/266164-brit-mono-protein-tuna-and-sweet-potato"
+    },
+    {
+      "diet": "Mono Protein - Lamb",
+      "type": "wet",
+      "calories": 1120,
+      "link": "https://brit-petfood.com/en/products/dogs/266153-brit-mono-protein-lamb"
+    }
+  ]
+}

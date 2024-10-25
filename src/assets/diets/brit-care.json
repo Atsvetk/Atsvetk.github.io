@@ -1,0 +1,400 @@
+{
+  "kitten": [
+    {
+      "diet": "KITTEN HEALTHY GROWTH AND DEVELOPMENT",
+      "type": "dry",
+      "calories": 4000,
+      "link": "https://brit-petfood.com/en/products/cats/479577-brit-care-cat-grain-free-kitten-healthy-growth-and-development"
+    },
+    {
+      "diet": "Pouch Fillets in Gravy with Tender Turkey",
+      "type": "wet",
+      "calories": 805,
+      "link": "https://brit-petfood.com/en/products/cats/1074750-brit-care-cat-kitten-fillets-in-gravy-with-tender-turkey"
+    },
+    {
+      "diet": "Pouch Savory Salmon in Jelly",
+      "type": "wet",
+      "calories": 840,
+      "link": "https://brit-petfood.com/en/products/cats/493447-brit-care-cat-pouch-kitten-savory-salmon-in-jelly"
+    },
+    {
+      "diet": "Can TUNA FILLETS for Kittens",
+      "type": "wet",
+      "calories": 541,
+      "link": "https://brit-petfood.com/en/products/cats/436329-brit-care-cat-tuna-fillets-for-kittens"
+    },
+    {
+      "diet": "Pouch Tender Turkey in Gravy",
+      "type": "wet",
+      "calories": 840,
+      "link": "https://brit-petfood.com/en/products/cats/436451-brit-care-cat-pouch-kitten-tender-turkey-in-gravy"
+    },
+    {
+      "diet": "Pouch Fillets in Gravy with Savory Salmon",
+      "type": "wet",
+      "calories": 800,
+      "link": "https://brit-petfood.com/en/products/cats/1074737-brit-care-cat-kitten-fillets-in-gravy-with-savory-salmon"
+    },
+    {
+      "diet": "Pouch Fillets in Gravy with Savory Salmon",
+      "type": "wet",
+      "calories": 800,
+      "link": "https://brit-petfood.com/en/products/cats/1074738-brit-care-cat-kitten-fillets-in-gravy-with-savory-salmon-85-g"
+    },
+    {
+      "diet": "Pouch Fillets in Gravy Choice Chicken",
+      "type": "wet",
+      "calories": 800,
+      "link": "https://brit-petfood.com/en/products/cats/1074746-brit-care-cat-kitten-fillets-in-gravy-choice-chicken"
+    }
+  ],
+  "puppy": [
+    {
+      "diet": "Sustainable Puppy",
+      "type": "dry",
+      "calories": 4090,
+      "link": "https://brit-petfood.com/en/products/dogs/991576-brit-care-dog-sustainable-puppy"
+    },
+    {
+      "diet": "Grain-free Puppy",
+      "type": "dry",
+      "calories": 3930,
+      "link": "https://brit-petfood.com/en/products/dogs/991608-brit-care-dog-grain-free-puppy"
+    },
+    {
+      "diet": "Hypoallergenic Puppy",
+      "type": "dry",
+      "calories": 3980,
+      "link": "https://brit-petfood.com/en/products/dogs/991632-brit-care-dog-hypoallergenic-puppy"
+    },
+    {
+      "diet": "Pouch Mini Lamb fillets in gravy",
+      "type": "wet",
+      "calories": 865,
+      "link": "https://brit-petfood.com/en/products/dogs/281331-brit-care-mini-lamb-fillets-in-gravy-for-puppies"
+    },
+    {
+      "diet": "Mini Grain Free Puppy",
+      "type": "dry",
+      "calories": 4200,
+      "link": "https://brit-petfood.com/en/products/dogs/215106-brit-care-mini-grain-free-puppy"
+    },
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    }
+  ],
+  "cat": [
+    {
+      "diet": "SENSITIVE FOOD ALLERGY MANAGEMENT",
+      "type": "dry",
+      "calories": 3860,
+      "link": "https://brit-petfood.com/en/products/cats/716912-brit-care-cat-grain-free-sensitive-food-allergy-management"
+    },
+    {
+      "diet": "INDOOR ANTI-STRESS",
+      "type": "dry",
+      "calories": 3640,
+      "link": "https://brit-petfood.com/en/products/cats/479578-brit-care-cat-grain-free-indoor-anti-stress"
+    },
+    {
+      "diet": "STERILIZED URINARY HEALTH",
+      "type": "dry",
+      "calories": 3590,
+      "link": "https://brit-petfood.com/en/products/cats/479579-brit-care-cat-grain-free-sterilized-urinary-health"
+    },
+    {
+      "diet": "STERILIZED AND WEIGHT CONTROL",
+      "type": "dry",
+      "calories": 3520,
+      "link": "https://brit-petfood.com/en/products/cats/479580-brit-care-cat-grain-free-sterilized-and-weight-control"
+    },
+    {
+      "diet": "STERILIZED SENSITIVE",
+      "type": "dry",
+      "calories": 3610,
+      "link": "https://brit-petfood.com/en/products/cats/479581-brit-care-cat-grain-free-sterilized-sensitive"
+    },
+    {
+      "diet": "HAIRCARE HEALTHY AND SHINY COAT",
+      "type": "dry",
+      "calories": 3720,
+      "link": "https://brit-petfood.com/en/products/cats/479602-brit-care-cat-grain-free-haircare-healthy-and-shiny-coat"
+    },
+    {
+      "diet": "SENSITIVE HEALTHY DIGESTION AND DELICATE TASTE",
+      "type": "dry",
+      "calories": 3860,
+      "link": "https://brit-petfood.com/en/products/cats/479182-brit-care-cat-grain-free-sensitive-healthy-digestion-and-delicate-taste"
+    },
+    {
+      "diet": "ADULT ACTIVITY SUPPORT",
+      "type": "dry",
+      "calories": 4000,
+      "link": "https://brit-petfood.com/en/products/cats/479582-brit-care-cat-grain-free-adult-activity-support"
+    },
+    {
+      "diet": "LARGE CATS POWER AND VITALITY",
+      "type": "dry",
+      "calories": 3850,
+      "link": "https://brit-petfood.com/en/products/cats/479583-brit-care-cat-grain-free-large-cats-power-and-vitality"
+    },
+    {
+      "diet": "SENIOR AND WEIGHT CONTROL",
+      "type": "dry",
+      "calories": 3650,
+      "link": "https://brit-petfood.com/en/products/cats/479591-brit-care-cat-grain-free-senior-and-weight-control"
+    },
+    {
+      "diet": "Pouch Choice Chicken with Cheese in Jelly",
+      "type": "wet",
+      "calories": 820,
+      "link": "https://brit-petfood.com/en/products/cats/493451-brit-care-cat-pouch-choice-chicken-with-cheese-in-jelly"
+    },
+    {
+      "diet": "Pouch STERILIZED Hearty Duck & Tender Turkey in Jelly",
+      "type": "wet",
+      "calories": 800,
+      "link": "https://brit-petfood.com/en/products/cats/493448-brit-care-cat-pouch-sterilized-hearty-duck-and-tender-turkey-in-jelly"
+    },
+    {
+      "diet": "Pouch Tender Turkey & Shrimps in Jelly",
+      "type": "wet",
+      "calories": 810,
+      "link": "https://brit-petfood.com/en/products/cats/493450-brit-care-cat-pouch-tender-turkey-and-shrimps-in-jelly"
+    },
+    {
+      "diet": "Pouch Trout & Cod in Jelly",
+      "type": "wet",
+      "calories": 820,
+      "link": "https://brit-petfood.com/en/products/cats/493449-brit-care-cat-pouch-trout-and-cod-in-jelly"
+    },
+    {
+      "diet": "Pouch Wholesome Tuna in Jelly",
+      "type": "wet",
+      "calories": 770,
+      "link": "https://brit-petfood.com/en/products/cats/493452-brit-care-cat-pouch-wholesome-tuna-in-jelly"
+    },
+    {
+      "diet": "Can TUNA WITH CHICKEN AND MILK",
+      "type": "wet",
+      "calories": 950,
+      "link": "https://brit-petfood.com/en/products/cats/436331-brit-care-cat-tuna-with-chicken-and-milk"
+    },
+    {
+      "diet": "Can CHICKEN BREAST WITH RICE",
+      "type": "wet",
+      "calories": 541,
+      "link": "https://brit-petfood.com/en/products/cats/436328-brit-care-cat-chicken-breast-with-rice"
+    },
+    {
+      "diet": "Can TURKEY PATÉ WITH HAM",
+      "type": "wet",
+      "calories": 1333,
+      "link": "https://brit-petfood.com/en/products/cats/436332-brit-care-cat-turkey-pate-with-ham"
+    },
+    {
+      "diet": "Can STERILIZED TUNA PATÉ WITH SHRIMPS",
+      "type": "wet",
+      "calories": 439,
+      "link": "https://brit-petfood.com/en/products/cats/436330-brit-care-cat-sterilized-tuna-pate-with-shrimps"
+    },
+    {
+      "diet": "Can BEEF PATÉ WITH OLIVES",
+      "type": "wet",
+      "calories": 755,
+      "link": "https://brit-petfood.com/en/products/cats/436320-brit-care-cat-beef-pate-with-olives"
+    },
+    {
+      "diet": "Pouch CHOICE CHICKEN in Gravy",
+      "type": "wet",
+      "calories": 815,
+      "link": "https://brit-petfood.com/en/products/cats/436464-brit-care-cat-pouch-choice-chicken-in-gravy"
+    },
+    {
+      "diet": "Pouch HEARTY DUCK in Gravy",
+      "type": "wet",
+      "calories": 840,
+      "link": "https://brit-petfood.com/en/products/cats/436465-brit-care-cat-pouch-hearty-duck-in-gravy"
+    },
+    {
+      "diet": "Pouch SAVORY SALMON in Gravy",
+      "type": "wet",
+      "calories": 810,
+      "link": "https://brit-petfood.com/en/products/cats/436466-brit-care-cat-pouch-savory-salmon-in-gravy"
+    },
+    {
+      "diet": "Pouch STERILIZED Healthy Rabbit in Gravy",
+      "type": "wet",
+      "calories": 840,
+      "link": "https://brit-petfood.com/en/products/cats/436463-brit-care-cat-pouch-sterilized-healthy-rabbit-in-gravy"
+    },
+    {
+      "diet": "Pouch TENDER TURKEY & SAVORY SALMON in Gravy",
+      "type": "wet",
+      "calories": 810,
+      "link": "https://brit-petfood.com/en/products/cats/436467-brit-care-cat-pouch-tender-turkey-and-savory-salmon-in-gravy"
+    }
+  ],
+  "dog": [
+    {
+      "diet": "Hypoallergenic Senior Lamb and Rice",
+      "type": "dry",
+      "calories": 3380,
+      "link": "https://brit-petfood.com/en/products/dogs/1074676-brit-care-dog-hypoallergenic-senior-lamb-and-rice"
+    },
+    {
+      "diet": "Sustainable Activity",
+      "type": "dry",
+      "calories": 4290,
+      "link": "https://brit-petfood.com/en/products/dogs/991604-brit-care-dog-sustainable-activity"
+    },
+    {
+      "diet": "Sustainable Adult Large Breed",
+      "type": "dry",
+      "calories": 3760,
+      "link": "https://brit-petfood.com/en/products/dogs/991592-brit-care-dog-sustainable-adult-large-breed"
+    },
+    {
+      "diet": "Sustainable Adult Medium Breed",
+      "type": "dry",
+      "calories": 3835,
+      "link": "https://brit-petfood.com/en/products/dogs/991584-brit-care-dog-sustainable-adult-medium-breed"
+    },
+    {
+      "diet": "Sustainable Adult Small Breed",
+      "type": "dry",
+      "calories": 3860,
+      "link": "https://brit-petfood.com/en/products/dogs/991580-brit-care-dog-sustainable-adult-small-breed"
+    },
+    {
+      "diet": "Sustainable Junior Large Breed",
+      "type": "dry",
+      "calories": 3845,
+      "link": "https://brit-petfood.com/en/products/dogs/991588-brit-care-dog-sustainable-junior-large-breed"
+    },
+    {
+      "diet": "Sustainable Senior",
+      "type": "dry",
+      "calories": 3420,
+      "link": "https://brit-petfood.com/en/products/dogs/991596-brit-care-dog-sustainable-senior"
+    },
+    {
+      "diet": "Sustainable Sensitive",
+      "type": "dry",
+      "calories": 3650,
+      "link": "https://brit-petfood.com/en/products/dogs/991600-brit-care-dog-sustainable-sensitive"
+    },
+    {
+      "diet": "Grain-free Adult",
+      "type": "dry",
+      "calories": 3740,
+      "link": "https://brit-petfood.com/en/products/dogs/991612-brit-care-dog-grain-free-adult"
+    },
+    {
+      "diet": "Grain-free Adult Large Breed",
+      "type": "dry",
+      "calories": 3640,
+      "link": "https://brit-petfood.com/en/products/dogs/991620-brit-care-dog-grain-free-adult-large-breed"
+    },
+    {
+      "diet": "Grain-free Junior Large Breed",
+      "type": "dry",
+      "calories": 3730,
+      "link": "https://brit-petfood.com/en/products/dogs/991616-brit-care-dog-grain-free-junior-large-breed"
+    },
+    {
+      "diet": "Grain-free Senior & Light",
+      "type": "dry",
+      "calories": 3410,
+      "link": "https://brit-petfood.com/en/products/dogs/991624-brit-care-dog-grain-free-senior-and-light"
+    },
+    {
+      "diet": "Grain-free Sensitive",
+      "type": "dry",
+      "calories": 3640,
+      "link": "https://brit-petfood.com/en/products/dogs/991628-brit-care-dog-grain-free-sensitive"
+    },
+    {
+      "diet": "Hypoallergenic Adult Large Breed",
+      "type": "dry",
+      "calories": 3690,
+      "link": "https://brit-petfood.com/en/products/dogs/991644-brit-care-dog-hypoallergenic-adult-large-breed"
+    },
+    {
+      "diet": "Hypoallergenic Adult Medium Breed",
+      "type": "dry",
+      "calories": 3810,
+      "link": "https://brit-petfood.com/en/products/dogs/991636-brit-care-dog-hypoallergenic-adult-medium-breed"
+    },
+    {
+      "diet": "Hypoallergenic Dog Show Champion",
+      "type": "dry",
+      "calories": 3830,
+      "link": "https://brit-petfood.com/en/products/dogs/991652-brit-care-dog-hypoallergenic-dog-show-champion"
+    },
+    {
+      "diet": "Hypoallergenic Junior Large Breed",
+      "type": "dry",
+      "calories": 3850,
+      "link": "https://brit-petfood.com/en/products/dogs/991640-brit-care-dog-hypoallergenic-junior-large-breed"
+    },
+    {
+      "diet": "Hypoallergenic Weight Loss",
+      "type": "dry",
+      "calories": 3110,
+      "link": "https://brit-petfood.com/en/products/dogs/991648-brit-care-dog-hypoallergenic-weight-loss"
+    },
+    {
+      "diet": "Hair & Skin Insect & Fish",
+      "type": "dry",
+      "calories": 3620,
+      "link": "https://brit-petfood.com/en/products/dogs/579959-brit-care-dog-hair-and-skin-insectandfish"
+    },
+    {
+      "diet": "Pouch Mini Lamb fillets in gravy",
+      "type": "wet",
+      "calories": 815,
+      "link": "https://brit-petfood.com/en/products/dogs/281354-brit-care-mini-lamb-fillets-in-gravy"
+    },
+    {
+      "diet": "Pouch Mini Rabbit & Salmon fillets in gravy",
+      "type": "wet",
+      "calories": 820,
+      "link": "https://brit-petfood.com/en/products/dogs/281355-brit-care-mini-rabbit-and-salmon-fillets-in-gravy"
+    },
+    {
+      "diet": "Pouch Mini Chicken & Tuna fillets in gravy",
+      "type": "wet",
+      "calories": 820,
+      "link": "https://brit-petfood.com/en/products/dogs/281249-brit-care-mini-chicken-and-tuna-fillets-in-gravy"
+    },
+    {
+      "diet": "Pouch Mini Venison fillets in gravy",
+      "type": "wet",
+      "calories": 865,
+      "link": "https://brit-petfood.com/en/products/dogs/281365-brit-care-mini-venison-fillets-in-gravy"
+    },
+    {
+      "diet": "Pouch Mini Salmon & Herring fillets in gravy for sterilised dogs",
+      "type": "wet",
+      "calories": 820,
+      "link": "https://brit-petfood.com/en/products/dogs/281356-brit-care-mini-salmon-andamp-herring-fillets-in-gravy-for-sterilised-dogs"
+    },
+    {
+      "diet": "Mini Grain Free Adult",
+      "type": "dry",
+      "calories": 3880,
+      "link": "https://brit-petfood.com/en/products/dogs/215108-brit-care-mini-grain-free-adult"
+    },
+    {
+      "diet": "Hypoallergenic Adult Small Breed",
+      "type": "dry",
+      "calories": 3870,
+      "link": "https://brit-petfood.com/en/products/dogs/1074658-brit-care-dog-hypoallergenic-adult-small-breed"
+    }
+  ]
+}

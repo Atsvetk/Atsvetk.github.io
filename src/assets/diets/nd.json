@@ -1,0 +1,790 @@
+{
+  "kitten": [
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    },
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    }
+  ],
+  "puppy": [
+    {
+      "diet": "Prime Chicken & Pomegranate Puppy Mini",
+      "type": "dry",
+      "calories": 4186,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/585-chicken-&-pomegranate-puppy-mini.html"
+    },
+    {
+      "diet": "Prime Chicken & Pomegranate Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4186,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/586-chicken-&-pomegranate-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Prime Chicken & Pomegranate Puppy Mini & Medium",
+      "type": "dry",
+      "calories": 4186,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/91-chicken-&-pomegranate-puppy-mini-&-medium.html"
+    },
+    {
+      "diet": "Ocean Cod, Pumpkin and Cantaloupe Melon Puppy Mini",
+      "type": "dry",
+      "calories": 4125,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ocean-za-pse/704-cod,-pumpkin-and-cantaloupe-melon-puppy-mini.html"
+    },
+    {
+      "diet": "Ocean Cod, Pumpkin and Cantaloupe Melon Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4125,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ocean-za-pse/705-cod,-pumpkin-and-cantaloupe-melon-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Pumpkin Chicken and Pomegranate Starter Puppy",
+      "type": "dry",
+      "calories": 4189,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/715-chicken,-pumpkin-and-pomegranate-starter-puppy.html"
+    },
+    {
+      "diet": "Pumpkin Chicken and Pomegranate Puppy Mini",
+      "type": "dry",
+      "calories": 4150,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/716-chicken,-pumpkin-and-pomegranate-puppy-mini.html"
+    },
+    {
+      "diet": "Pumpkin Lamb & Blueberry Puppy Mini",
+      "type": "dry",
+      "calories": 4139,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/388-lamb-&-blueberry-puppy-mini.html"
+    },
+    {
+      "diet": "Pumpkin Chicken and Pomegranate Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4150,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/717-chicken,-pumpkin-and-pomegranate-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Pumpkin Lamb & Blueberry Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4139,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/389-lamb-&-blueberry-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Puppy Mini",
+      "type": "dry",
+      "calories": 4184,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/106-chicken-&-pomegranate-puppy-mini.html"
+    },
+    {
+      "diet": "Ancestral Grain Lamb & Blueberry Puppy Mini",
+      "type": "dry",
+      "calories": 4158,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/400-lamb-&-blueberry-puppy-mini.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4184,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/593-chicken-&-pomegranate-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ancestral Grain Lamb & Blueberry Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4158,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/401-lamb-&-blueberry-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Lamb, Spirulina And Wolfberry Puppy Mini",
+      "type": "dry",
+      "calories": 4074,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-spirulina-canine/996-lamb,-spirulina-and-wolfberry-puppy-mini.html"
+    },
+    {
+      "diet": "Lamb, Spirulina And Wolfberry Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4074,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-spirulina-canine/997-lamb,-spirulina-and-wolfberry-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Tropical Selection Lamb, Spelt, Oats And Tropical Fruits Puppy Mini",
+      "type": "dry",
+      "calories": 4062,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-tropical-selection-canine/1018-lamb,-spelt,-oats-and-tropical-fruits-puppy-mini.html"
+    },
+    {
+      "diet": "Tropical Selection Lamb, Spelt, Oats And Tropical Fruits Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4062,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-tropical-selection-canine/1019-lamb,-spelt,-oats-and-tropical-fruits-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Prime Chicken & Pomegranate Puppy",
+      "type": "wet",
+      "calories": 1074,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/515-chicken-&-pomegranate-puppy-mini-wet-food.html"
+    },
+    {
+      "diet": "Pumpkin Lamb & Blueberry - Starter",
+      "type": "wet",
+      "calories": 660,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/529-lamb,-pumpkin-&-blueberry---starter-wet-food.html"
+    },
+    {
+      "diet": "Pumpkin Lamb & Blueberry Puppy",
+      "type": "wet",
+      "calories": 1114,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/530-lamb,-pumpkin-&-blueberry-puppy-wet-food.html"
+    },
+    {
+      "diet": "Pumpkin Chicken & Pomegranate Puppy",
+      "type": "wet",
+      "calories": 1063,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/533-chicken,-pumpkin-&-pomegranate-puppy-wet-food.html"
+    }
+  ],
+  "cat": [
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    },
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    },
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    },
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    },
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    },
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    },
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    },
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    },
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    },
+    {
+      "diet": "",
+      "type": "dry",
+      "calories": 0,
+      "link": ""
+    }
+  ],
+  "dog": [
+    {
+      "diet": "Quinoa Digestion Lamb",
+      "type": "dry",
+      "calories": 3749,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/429-digestion-lamb.html"
+    },
+    {
+      "diet": "Quinoa Digestion Lamb Mini",
+      "type": "dry",
+      "calories": 3749,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/691-digestion-lamb-mini.html"
+    },
+    {
+      "diet": "Quinoa Skin & Coat Herring",
+      "type": "dry",
+      "calories": 3665,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/440-skin-&-coat-herring.html"
+    },
+    {
+      "diet": "Quinoa Skin & Coat Herring Mini",
+      "type": "dry",
+      "calories": 3665,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/694-skin-&-coat-herring-mini.html"
+    },
+    {
+      "diet": "Quinoa Skin & Coat Quail",
+      "type": "dry",
+      "calories": 3890,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/441-skin-&-coat-quail.html"
+    },
+    {
+      "diet": "Quinoa Skin & Coat Quail Mini",
+      "type": "dry",
+      "calories": 3690,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/696-skin-&-coat-quail-mini.html"
+    },
+    {
+      "diet": "Quinoa Skin & Coat Venison",
+      "type": "dry",
+      "calories": 3665,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/442-skin-&-coat-venison.html"
+    },
+    {
+      "diet": "Quinoa Skin & Coat Venison Mini",
+      "type": "dry",
+      "calories": 3665,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/695-skin-&-coat-venison-mini.html"
+    },
+    {
+      "diet": "Quinoa Skin & Coat Duck",
+      "type": "dry",
+      "calories": 3665,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/443-skin-&-coat-duck.html"
+    },
+    {
+      "diet": "Quinoa Skin & Coat Duck Mini",
+      "type": "dry",
+      "calories": 3665,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/693-skin-&-coat-duck-mini.html"
+    },
+    {
+      "diet": "Quinoa Weight Management Lamb",
+      "type": "dry",
+      "calories": 3136,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/444-weight-management-lamb.html"
+    },
+    {
+      "diet": "Quinoa Weight Management Lamb Mini",
+      "type": "dry",
+      "calories": 3136,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/692-weight-management-lamb-mini.html"
+    },
+    {
+      "diet": "Quinoa Neutered Adult Mini",
+      "type": "dry",
+      "calories": 3444,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/689-neutered-adult-mini.html"
+    },
+    {
+      "diet": "Quinoa Neutered Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3444,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/690-neutered-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Prime Chicken & Pomegranate Puppy Mini",
+      "type": "dry",
+      "calories": 4186,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/585-chicken-&-pomegranate-puppy-mini.html"
+    },
+    {
+      "diet": "Prime Chicken & Pomegranate Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4186,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/586-chicken-&-pomegranate-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Prime Chicken & Pomegranate Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3999,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/588-chicken-&-pomegranate-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Prime Wild Boar & Apple Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3995,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/590-wild-boar-&-apple-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Prime Lamb & Blueberry Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3981,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/592-lamb-&-blueberry-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Prime Chicken & Pomegranate Puppy Mini & Medium",
+      "type": "dry",
+      "calories": 4186,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/91-chicken-&-pomegranate-puppy-mini-&-medium.html"
+    },
+    {
+      "diet": "Prime Chicken & Pomegranate Adult Mini",
+      "type": "dry",
+      "calories": 3999,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/93-chicken-&-pomegranate-adult-mini.html"
+    },
+    {
+      "diet": "Prime Wild Boar & Apple Adult Mini",
+      "type": "dry",
+      "calories": 3995,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/96-wild-boar-&-apple-adult-mini.html"
+    },
+    {
+      "diet": "Prime Lamb & Blueberry Adult Mini",
+      "type": "dry",
+      "calories": 3981,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/102-lamb-&-blueberry-adult-mini.html"
+    },
+    {
+      "diet": "Ocean Cod, Pumpkin and Cantaloupe Melon Puppy Mini",
+      "type": "dry",
+      "calories": 4125,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ocean-za-pse/704-cod,-pumpkin-and-cantaloupe-melon-puppy-mini.html"
+    },
+    {
+      "diet": "Ocean Cod, Pumpkin and Cantaloupe Melon Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4125,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ocean-za-pse/705-cod,-pumpkin-and-cantaloupe-melon-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ocean Herring & Orange Adult Mini",
+      "type": "dry",
+      "calories": 3999,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ocean-za-pse/581-herring-&-orange-adult-mini.html"
+    },
+    {
+      "diet": "Ocean Herring & Orange Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3999,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ocean-za-pse/485-herring-&-orange-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ocean Cod, Pumpkin & Orange Adult Mini",
+      "type": "dry",
+      "calories": 3980,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ocean-za-pse/580-cod,-pumpkin-&-orange-adult-mini.html"
+    },
+    {
+      "diet": "Ocean Cod, Pumpkin & Orange Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3980,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ocean-za-pse/582-cod,-pumpkin-&-orange-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ocean Cod, Spelt, Oats & Orange Adult Mini",
+      "type": "dry",
+      "calories": 3994,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ocean-za-pse/583-cod,-spelt,-oats-&-orange-adult-mini.html"
+    },
+    {
+      "diet": "Ocean Cod, Spelt, Oats & Orange Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3994,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ocean-za-pse/584-cod,-spelt,-oats-&-orange-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Pumpkin Chicken and Pomegranate Puppy Mini",
+      "type": "dry",
+      "calories": 4150,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/716-chicken,-pumpkin-and-pomegranate-puppy-mini.html"
+    },
+    {
+      "diet": "Pumpkin Lamb & Blueberry Puppy Mini",
+      "type": "dry",
+      "calories": 4139,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/388-lamb-&-blueberry-puppy-mini.html"
+    },
+    {
+      "diet": "Pumpkin Chicken and Pomegranate Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4150,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/717-chicken,-pumpkin-and-pomegranate-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Pumpkin Lamb & Blueberry Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4139,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/389-lamb-&-blueberry-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Pumpkin Chicken and Pomegranate Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3990,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/391-chicken-and-pomegranate-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Pumpkin Lamb & Blueberry Adult Mini",
+      "type": "dry",
+      "calories": 3926,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/392-lamb-&-blueberry-adult-mini.html"
+    },
+    {
+      "diet": "Pumpkin Chicken and Pomegranate Adult Mini",
+      "type": "dry",
+      "calories": 3990,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/390-chicken-and-pomegranate-adult-mini.html"
+    },
+    {
+      "diet": "Pumpkin Lamb & Blueberry Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3926,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/393-lamb-&-blueberry-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Pumpkin Lamb & Blueberry Adult Maxi Giant",
+      "type": "dry",
+      "calories": 3926,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/724-lamb-&-blueberry-adult-maxi-giant.html"
+    },
+    {
+      "diet": "Pumpkin Boar and Apple Adult Mini",
+      "type": "dry",
+      "calories": 4005,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/396-boar-and-apple-adult-mini.html"
+    },
+    {
+      "diet": "Pumpkin Boar and Apple Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 4005,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/397-boar-and-apple-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Pumpkin Duck & Cantaloupe Melon Adult Mini",
+      "type": "dry",
+      "calories": 3980,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/974-duck-&-cantaloupe-melon-adult-mini.html"
+    },
+    {
+      "diet": "Pumpkin Duck & Cantaloupe Melon Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3980,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/975-duck-&-cantaloupe-melon-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Pumpkin Quail & Pomegranate Adult Mini",
+      "type": "dry",
+      "calories": 3980,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/976-quail-&-pomegranate-adult-mini.html"
+    },
+    {
+      "diet": "Pumpkin Quail & Pomegranate Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3980,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/977-quail-&-pomegranate-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Pumpkin Venison & Apple Adult Mini",
+      "type": "dry",
+      "calories": 3926,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/978-venison-&-apple-adult-mini.html"
+    },
+    {
+      "diet": "Pumpkin Venison & Apple Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3926,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/979-venison-&-apple-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Puppy Mini",
+      "type": "dry",
+      "calories": 4184,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/106-chicken-&-pomegranate-puppy-mini.html"
+    },
+    {
+      "diet": "Ancestral Grain Lamb & Blueberry Puppy Mini",
+      "type": "dry",
+      "calories": 4158,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/400-lamb-&-blueberry-puppy-mini.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4184,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/593-chicken-&-pomegranate-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ancestral Grain Lamb & Blueberry Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4158,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/401-lamb-&-blueberry-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Adult Mini",
+      "type": "dry",
+      "calories": 3997,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/109-chicken-&-pomegranate-adult-mini.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3997,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/594-chicken-&-pomegranate-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Adult Maxi Giant",
+      "type": "dry",
+      "calories": 3997,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/725-chicken-&-pomegranate-adult-maxi-giant.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Light Mini",
+      "type": "dry",
+      "calories": 3375,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/595-chicken-&-pomegranate-light-mini.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Light Medium & Maxi",
+      "type": "dry",
+      "calories": 3375,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/113-chicken-&-pomegranate-light-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Senior Mini",
+      "type": "dry",
+      "calories": 3701,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/596-chicken-&-pomegranate-senior-mini.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Senior Mini & Medium",
+      "type": "dry",
+      "calories": 3701,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/114-chicken-&-pomegranate-senior-mini-&-medium.html"
+    },
+    {
+      "diet": "Ancestral Grain Chicken & Pomegranate Senior Medium & Maxi",
+      "type": "dry",
+      "calories": 3701,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/115-chicken-&-pomegranate-senior-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ancestral Grain Lamb & Blueberry Puppy Mini",
+      "type": "dry",
+      "calories": 4158,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/400-lamb-&-blueberry-puppy-mini.html"
+    },
+    {
+      "diet": "Ancestral Grain Lamb & Blueberry Adult Mini",
+      "type": "dry",
+      "calories": 3941,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/119-lamb-&-blueberry-adult-mini.html"
+    },
+    {
+      "diet": "Ancestral Grain Lamb & Blueberry Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3941,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/597-lamb-&-blueberry-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Ancestral Grain Selection Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3885,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-ancestral-grain-za-pse/631-selection-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Lamb, Spirulina And Wolfberry Puppy Mini",
+      "type": "dry",
+      "calories": 4074,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-spirulina-canine/996-lamb,-spirulina-and-wolfberry-puppy-mini.html"
+    },
+    {
+      "diet": "Lamb, Spirulina And Wolfberry Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4074,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-spirulina-canine/997-lamb,-spirulina-and-wolfberry-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Lamb, Spirulina And Wolfberry Adult Mini",
+      "type": "dry",
+      "calories": 3926,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-spirulina-canine/998-lamb,-spirulina-and-wolfberry-adult-mini.html"
+    },
+    {
+      "diet": "Lamb, Spirulina And Wolfberry Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3926,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-spirulina-canine/999-lamb,-spirulina-and-wolfberry-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "White Sea Bass, Spirulina And Fennel Recipe",
+      "type": "dry",
+      "calories": 3934,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-white/1006-sea-bass,-spirulina-and-fennel-recipe.html"
+    },
+    {
+      "diet": "Brown Lamb, Spirulina And Carrot Recipe",
+      "type": "dry",
+      "calories": 3917,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-brown/1010-lamb,-spirulina-and-carrot-recipe.html"
+    },
+    {
+      "diet": "Tropical Selection Lamb, Spelt, Oats And Tropical Fruits Puppy Mini",
+      "type": "dry",
+      "calories": 4062,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-tropical-selection-canine/1018-lamb,-spelt,-oats-and-tropical-fruits-puppy-mini.html"
+    },
+    {
+      "diet": "Tropical Selection Lamb, Spelt, Oats And Tropical Fruits Puppy Medium & Maxi",
+      "type": "dry",
+      "calories": 4062,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-tropical-selection-canine/1019-lamb,-spelt,-oats-and-tropical-fruits-puppy-medium-&-maxi.html"
+    },
+    {
+      "diet": "Tropical Selection Chicken, Spelt, Oats And Tropical Fruits Adult Mini",
+      "type": "dry",
+      "calories": 3885,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-tropical-selection-canine/1012-chicken,-spelt,-oats-and-tropical-fruits-adult-mini.html"
+    },
+    {
+      "diet": "Tropical Selection Chicken, Spelt, Oats And Tropical Fruits Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3885,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-tropical-selection-canine/1020-chicken,-spelt,-oats-and-tropical-fruits-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Tropical Selection Lamb, Spelt, Oats And Tropical Fruits Adult Mini",
+      "type": "dry",
+      "calories": 3864,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-tropical-selection-canine/1015-lamb,-spelt,-oats-and-tropical-fruits-adult-mini.html"
+    },
+    {
+      "diet": "Tropical Selection Lamb, Spelt, Oats And Tropical Fruits Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3864,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-tropical-selection-canine/1021-lamb,-spelt,-oats-and-tropical-fruits-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Tropical Selection Salmon, Spelt, Oats And Tropical Fruits Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3856,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-tropical-selection-canine/1022-salmon,-spelt,-oats-and-tropical-fruits-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Tropical Selection Pork, Spelt, Oats And Tropical Fruits Adult Mini",
+      "type": "dry",
+      "calories": 3885,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-tropical-selection-canine/1017-pork,-spelt,-oats-and-tropical-fruits-adult-mini.html"
+    },
+    {
+      "diet": "Tropical Selection Pork, Spelt, Oats And Tropical Fruits Adult Medium & Maxi",
+      "type": "dry",
+      "calories": 3885,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-tropical-selection-canine/1023-pork,-spelt,-oats-and-tropical-fruits-adult-medium-&-maxi.html"
+    },
+    {
+      "diet": "Quinoa Digestion",
+      "type": "wet",
+      "calories": 974,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/550-digestion-wet-food.html"
+    },
+    {
+      "diet": "Quinoa Skin & Coat Duck",
+      "type": "wet",
+      "calories": 1052,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/541-skin-&-coat-duck-mini-wet-food.html"
+    },
+    {
+      "diet": "Quinoa Skin & Coat Venison",
+      "type": "wet",
+      "calories": 1047,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/545-skin&coat-venison-wet-food.html"
+    },
+    {
+      "diet": "Quinoa Weight Management",
+      "type": "wet",
+      "calories": 849,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/549-weight-management-wet-food.html"
+    },
+    {
+      "diet": "Quinoa Skin & Coat Quail",
+      "type": "wet",
+      "calories": 1069,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-quinoa-za-pse/548-skin&coat-quail-wet-food.html"
+    },
+    {
+      "diet": "Prime Chicken & Pomegranate Puppy",
+      "type": "wet",
+      "calories": 1074,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/515-chicken-&-pomegranate-puppy-mini-wet-food.html"
+    },
+    {
+      "diet": "Prime Chicken & Pomegranate Adult",
+      "type": "wet",
+      "calories": 1072,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/516-chicken-&-pomegranate-adult-mini-wet-food.html"
+    },
+    {
+      "diet": "Prime Boar & Apple Adult",
+      "type": "wet",
+      "calories": 1095,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/517-boar-&-apple-adult-mini-wet-food.html"
+    },
+    {
+      "diet": "Prime Lamb & Blueberry Adult",
+      "type": "wet",
+      "calories": 1164,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-prime-za-pse/369-lamb-&-blueberry-wet-food-adult.html"
+    },
+    {
+      "diet": "Pumpkin Lamb & Blueberry Puppy",
+      "type": "wet",
+      "calories": 1114,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/530-lamb,-pumpkin-&-blueberry-puppy-wet-food.html"
+    },
+    {
+      "diet": "Pumpkin Lamb & Blueberry Adult",
+      "type": "wet",
+      "calories": 1145,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/531-lamb,-pumpkin-&-blueberry-adult-wet-food.html"
+    },
+    {
+      "diet": "Pumpkin Chicken & Pomegranate Adult",
+      "type": "wet",
+      "calories": 1056,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/534-chicken,-pumpkin-&-pomegranate-adult-wet-food.html"
+    },
+    {
+      "diet": "Pumpkin Boar & Apple Adult",
+      "type": "wet",
+      "calories": 1079,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/535-boar,-pumpkin-&-apple-adult-wet-food.html"
+    },
+    {
+      "diet": "Pumpkin Duck Adult",
+      "type": "wet",
+      "calories": 1035,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/536-duck-&-pumpkin-adult-wet-food.html"
+    },
+    {
+      "diet": "Pumpkin Quail Adult",
+      "type": "wet",
+      "calories": 1035,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/537-quail-&-pumpkin-adult-wet-food.html"
+    },
+    {
+      "diet": "Pumpkin Venison Adult",
+      "type": "wet",
+      "calories": 1089,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/538-venison-&-pumpkin-adult-wet-food.html"
+    },
+    {
+      "diet": "Pumpkin Chicken & Pomegranate Puppy",
+      "type": "wet",
+      "calories": 1063,
+      "link": "https://www.farmina.com/rs/eshop/hrana-za-va%C5%A1eg-psa/n&d-pumpkin-za-pse/533-chicken,-pumpkin-&-pomegranate-puppy-wet-food.html"
+    }
+  ]
+}
