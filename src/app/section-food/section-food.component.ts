@@ -49,7 +49,10 @@ export class SectionFoodComponent implements OnInit {
   brand: string = '';
   brandOptions: string[] = [
     'Acana',
-    'Trovet'
+    'Trovet',
+    '',
+    '',
+    ''
   ];
   allBrandDiets: {} = {};
   caloriesInputted: number = this.caloriesNumCalculated;
