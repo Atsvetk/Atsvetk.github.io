@@ -64,7 +64,7 @@ export class SectionCaloriesComponent implements OnInit {
 
   getCalories() {
     let calories = 0;
-    let bcsMultiplier = 1 + (5 - this.currentBcs) * 0.1;
+    let bcsMultiplier = 1 + (this.targetBcs - this.currentBcs) * 0.1;
     const rawTargetWeight = bcsMultiplier * this.currentWeight;
     this.targetWeight = Math.round((rawTargetWeight + Number.EPSILON) * 100) / 100
     switch(this.petTypeSelected.toLowerCase()) {
