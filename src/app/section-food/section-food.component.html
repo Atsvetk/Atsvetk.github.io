@@ -49,7 +49,7 @@
         <input matInput class="wet-food-amount" type="number" min="0" max="{{wetFoodMaxAmount}}" placeholder="0" [(ngModel)]="wetFoodAmount" (change)="onDesiredWetFoodAmountChange($event)">
         <span matSuffix>   g</span>
         <mat-hint align="end">
-          The value should be between 0 and
+          The value should be between 0 and {{wetFoodMaxAmount}}
         </mat-hint>
         <mat-error align="end">
           The value should be between 0 and {{wetFoodMaxAmount}}
@@ -57,7 +57,7 @@
       </mat-form-field>
     </div>
     <div class="section-button-group">
-      <button (click)="onFoodFormSubmit()" mat-raised-button color="primary" [disabled]="!isFoodFormValid()" style="font-family: Century">
+      <button (click)="onFoodFormSubmit()" mat-raised-button color="primary" [disabled]="!isFoodFormValid()">
         Calculate food
       </button>
     </div>
