@@ -12,7 +12,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  title = 'Pet Food Calculations';
+  title = 'Pet Foood Calculations';
   creditsShown = false;
 
   onCreditsClick() {
